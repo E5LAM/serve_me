@@ -6,7 +6,9 @@ export default function uppdebar() {
       <p>uppdebar</p>
       <Container>
         <Row>
-          <Col></Col>
+          <Col>
+           
+          </Col>
           <Col></Col>
         </Row>
       </Container>
