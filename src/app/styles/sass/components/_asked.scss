@@ -1,0 +1,13 @@
+.asked{
+    padding: $big-sections-padding;
+    border-bottom: 2px solid $lines-color;
+    .accordion-button{
+        background-color: $background-color;
+        color: #fff;
+        margin-left: 0px;
+       
+    }
+    .accordion-button:after{
+        display: none !important;
+    }
+}

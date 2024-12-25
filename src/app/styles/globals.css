@@ -29,6 +29,12 @@ a {
   -o-border-radius: 10px;
 }
 
+h2 {
+  color: #2254AA;
+  font-size: 50px;
+  font-weight: bold;
+}
+
 .btn-prim {
   background-color: #1E3B55;
   border-color: #1E3B55;
@@ -152,6 +158,24 @@ a {
 }
 .awards .awards-slider .slider-item img {
   margin: auto;
+}
+
+.map {
+  padding: 50px 0;
+  border-bottom: 2px solid rgba(34, 84, 170, 0.5019607843);
+}
+
+.asked {
+  padding: 50px 0;
+  border-bottom: 2px solid rgba(34, 84, 170, 0.5019607843);
+}
+.asked .accordion-button {
+  background-color: #1E3B55;
+  color: #fff;
+  margin-left: 0px;
+}
+.asked .accordion-button:after {
+  display: none !important;
 }
 
 .footer {
