@@ -1,0 +1,11 @@
+.contact-section{
+    padding: $big-sections-padding;
+    border-bottom: 2px solid $lines-color;
+    form{
+        textarea{
+            height: 100px !important;
+            resize: none;
+            margin-bottom: 20px;
+        }
+    }
+}

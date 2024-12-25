@@ -6,6 +6,7 @@ import MoreAbout from "@/components/more-about/MoreAbout";
 import Testimonials from "@/components/testimonials/Testimonials";
 import Map from "@/components/map/Map";
 import Asked from "@/components/asked/Asked";
+import ContactUs from "@/components/contact-us/ContactUs";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Awards />
       <Map />
       <Asked  />
+      <ContactUs />
     </>
   );
 }
