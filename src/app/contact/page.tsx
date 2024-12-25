@@ -1,7 +1,6 @@
-import React from 'react'
+import "@/app/styles/sass/pages/_contact.scss";
+import ContactUs from "@/components/contact/contact-us";
 
-export default function Page() {
-  return (
-    <h1>contact us page</h1>
-  )
+export default function ContactPage() {
+  return <ContactUs />;
 }

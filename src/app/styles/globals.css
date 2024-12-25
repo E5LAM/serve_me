@@ -17,7 +17,7 @@ a {
 
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: #1E3B55;
+  background-color: #1e3b55;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -36,8 +36,8 @@ h2 {
 }
 
 .btn-prim {
-  background-color: #1E3B55;
-  border-color: #1E3B55;
+  background-color: #1e3b55;
+  border-color: #1e3b55;
   color: #fff;
   font-size: 20px;
   font-weight: 400;
@@ -50,7 +50,7 @@ h2 {
 }
 
 .upperbar {
-  background-color: #1E3B55;
+  background-color: #1e3b55;
   color: #fff;
   padding: 20px 0;
 }
@@ -108,7 +108,7 @@ h2 {
   color: #222;
 }
 .testimonials .slider-item {
-  background-color: #2966CC;
+  background-color: #2966cc;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -200,7 +200,7 @@ h2 {
 
 .footer {
   padding: 20px 0;
-  background-color: #1E3B55;
+  background-color: #1e3b55;
   color: #fff;
 }
 .footer .footer-logo {
@@ -211,7 +211,7 @@ h2 {
 .footer .footer-services h3,
 .footer .footer-contact-information h3,
 .footer .footer-terms-condition h3 {
-  color: #2254AA;
+  color: #2254aa;
 }
 .footer .info .sebd-mail .fa-envelope {
   color: #fff;
@@ -241,4 +241,4 @@ h2 {
   width: 30px;
   height: 30px;
   margin-left: 10px;
-}/*# sourceMappingURL=globals.css.map */
+} /*# sourceMappingURL=globals.css.map */
