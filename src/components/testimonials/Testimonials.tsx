@@ -73,7 +73,7 @@ export default function Testimonials() {
                   <div className="slider-box-desc">
                     <p>
                       Excellent service! Highly recommended for professional
-                      work and great customer care.
+                      work 
                     </p>
                   </div>
                 </div>
