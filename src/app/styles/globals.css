@@ -63,7 +63,11 @@ a {
   background-color: #1E3B55;
   color: #fff;
 }
-.footer .footer-area-we-serve h3, .footer .footer-services h3, .footer .footer-services h3, .footer .footer-contact-information h3 {
+.footer .footer-area-we-serve h3,
+.footer .footer-services h3,
+.footer .footer-services h3,
+.footer .footer-contact-information h3,
+.footer .footer-terms-condition h3 {
   color: #2254AA;
 }
 .footer .info .sebd-mail .fa-envelope {
@@ -75,4 +79,23 @@ a {
   color: #fff;
   width: 30px;
   height: 30px;
+}
+.footer .footer-location {
+  margin: 20px 0;
+}
+.footer .footer-location .footer-location-box {
+  background-color: rgba(85, 135, 221, 0.5019607843);
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 15px 0;
+}
+.footer .footer-location .footer-location-box .fa-x {
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
 }/*# sourceMappingURL=globals.css.map */

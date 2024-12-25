@@ -1,5 +1,6 @@
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { Col, Container, Row } from "react-bootstrap";
@@ -142,13 +143,11 @@ export default function Footer() {
                 <li>
                   <Link href="#">(123) 456 - 7890</Link>
                 </li>
-                
               </ul>
             </div>
           </Col>
           <Col md={4}>
-          
-          <div className="footer-terms-condition">
+            <div className="footer-terms-condition">
               <h3>Terms & Condition</h3>
               <ul>
                 <li>
@@ -162,9 +161,228 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            </Col>
-          <Col md={4}></Col>
+          </Col>
         </Row>
+        <div className="footer-location">
+          <Row>
+            <Col md={3}>
+              <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
+                  <Link href={"#"}>Find us on the map</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>Phone Number</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+            <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
+                  <Link href={"#"}>Find us on the map</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>Phone Number</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+            <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
+                  <Link href={"#"}>Find us on the map</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>Phone Number</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+            <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
+                  <Link href={"#"}>Find us on the map</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>Phone Number</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+            <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
+                  <Link href={"#"}>Find us on the map</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>Phone Number</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+            <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
+                  <Link href={"#"}>Find us on the map</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>Phone Number</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+            <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
+                  <Link href={"#"}>Find us on the map</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>Phone Number</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+            <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
+                  <Link href={"#"}>Find us on the map</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>Phone Number</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+            <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
+                  <Link href={"#"}>Find us on the map</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>Phone Number</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+            <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
+                  <Link href={"#"}>Find us on the map</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>Phone Number</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+            <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
+                  <Link href={"#"}>Find us on the map</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>Phone Number</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+            <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
+                  <Link href={"#"}>Find us on the map</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>Phone Number</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </div>
       </Container>
     </section>
   );

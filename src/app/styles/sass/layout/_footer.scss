@@ -3,11 +3,14 @@
   background-color: $background-color;
   color: #fff;
 
-  .footer-area-we-serve,.footer-services, .footer-services,.footer-contact-information{
-    h3{
+  .footer-area-we-serve,
+  .footer-services,
+  .footer-services,
+  .footer-contact-information,
+  .footer-terms-condition {
+    h3 {
       color: $primary-color;
     }
-    
   }
   .info {
     .sebd-mail {
@@ -24,6 +27,28 @@
           width: 30px;
           height: 30px;
         }
+      }
+    }
+  }
+
+  .footer-location {
+    margin: 20px 0;
+    .footer-location-box {
+      background-color: $second-background-color;
+      padding: 10px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      margin: 15px 0;
+    }
+    .footer-location-box {
+      .fa-x {
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
       }
     }
   }
