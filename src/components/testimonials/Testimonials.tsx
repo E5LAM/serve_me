@@ -12,8 +12,8 @@ export default function Testimonials() {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1, 
-    responsive: [   
+    slidesToScroll: 1,
+    responsive: [
       {
         breakpoint: 768,
         settings: {
@@ -22,7 +22,7 @@ export default function Testimonials() {
         },
       },
       {
-        breakpoint: 1024, 
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -37,75 +37,72 @@ export default function Testimonials() {
         <Row className="align-items-center">
           <Col md={6}>
             <div className="testi-info text-center">
-              <p>Logo</p>
+              <p className="testimonials-logo">اخدمني</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laborum, inventore ducimus sapiente possimus similique vero
-                porro at fuga dolorem corporis velit corrupti magni eum
-                molestias itaque voluptate unde minima voluptatem!
+                لوريم إيبسوم دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت.
+                لابوروم، إينفينتوري دوكيموس سابينتي بوسيموس سيميليكوي فيرو
+                بورو آت فوجا دولوريم كوربوريس فيليت كوروبتي ماغني إيم
+                موليستياس إيتاكوي وولوبات إندي مينما وولوباتيم!
               </p>
               <div className="testi-images d-flex justify-content-center align-items-center gap-5">
                 <Image
                   src={"/images/testimonials/google.png"}
                   width={250}
                   height={150}
-                  alt="Google Logo"
+                  alt="Google اخدمني"
                 />
                 <Image
                   src={"/images/testimonials/yelp.png"}
                   width={250}
                   height={150}
-                  alt="Yelp Logo"
+                  alt="Yelp اخدمني"
                 />
               </div>
             </div>
           </Col>
           <Col md={6}>
-            
-            <div className="testi-slider">
-            <h2 className="text-center mb-5 fw-bold">Client Testimonials</h2>
+            <div className="testi-slider text-end">
+              <h2 className="text-center mb-5 fw-bold">شهادات العملاء</h2>
               <Slider {...settings}>
                 <div className="slider-item">
                   <div className="slider-box-header">
-                    <h4>John Doe</h4>
-                    <p>CEO, Company</p>
+                    <h4>جون دو</h4>
+                    <p>الرئيس التنفيذي، الشركة</p>
                   </div>
                   <div className="slider-box-rate">⭐⭐⭐⭐⭐</div>
                   <div className="slider-box-desc">
                     <p>
-                      Excellent service! Highly recommended for professional
-                      work 
+                      خدمة ممتازة! أوصي بها بشدة للعمل المهني.
                     </p>
                   </div>
                 </div>
                 <div className="slider-item">
                   <div className="slider-box-header">
-                    <h4>Jane Smith</h4>
-                    <p>Manager, Business</p>
+                    <h4>جين سميث</h4>
+                    <p>مدير، الأعمال</p>
                   </div>
                   <div className="slider-box-rate">⭐⭐⭐⭐</div>
                   <div className="slider-box-desc">
-                    <p>Great experience, will definitely use again!</p>
+                    <p>تجربة رائعة، سأستخدمها بالتأكيد مرة أخرى!</p>
                   </div>
                 </div>
                 <div className="slider-item">
                   <div className="slider-box-header">
-                    <h4>Mike Taylor</h4>
-                    <p>Freelancer</p>
+                    <h4>مايك تايلور</h4>
+                    <p>مستقل</p>
                   </div>
                   <div className="slider-box-rate">⭐⭐⭐⭐⭐</div>
                   <div className="slider-box-desc">
-                    <p>Very satisfied with the outcome!</p>
+                    <p>ممتازة جدًا في النتيجة!</p>
                   </div>
                 </div>
               </Slider>
             </div>
             <div className="btn-out-serv text-center">
-            <Link href={"#"} className="">
-              <button className="btn-prim mt-4">Our Reviews</button>
-            </Link>
+              <Link href={"#"} className="">
+                <button className="btn-prim mt-4">مراجعاتنا</button>
+              </Link>
             </div>
-           
           </Col>
         </Row>
       </Container>

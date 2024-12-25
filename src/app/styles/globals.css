@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Inter", serif;
+  font-family: "Cairo", serif;
 }
 
 a {
@@ -78,6 +78,11 @@ h2 {
 .primary-navbar .navbar a {
   color: #222;
 }
+.primary-navbar .navbar .navbar-brand {
+  font-size: 40px;
+  font-weight: bold;
+  color: #222;
+}
 .primary-navbar .navbar .nav-link {
   padding: 0;
 }
@@ -96,6 +101,11 @@ h2 {
 }
 .testimonials h2 {
   font-weight: bold;
+}
+.testimonials .testimonials-logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: #222;
 }
 .testimonials .slider-item {
   background-color: #2966CC;
@@ -191,6 +201,9 @@ h2 {
 .footer {
   padding: 20px 0;
   background-color: #1E3B55;
+  color: #fff;
+}
+.footer .footer-logo {
   color: #fff;
 }
 .footer .footer-area-we-serve h3,

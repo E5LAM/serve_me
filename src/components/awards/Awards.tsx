@@ -3,6 +3,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Slider from "react-slick";
 import Image from "next/image";
+
 export default function Awards() {
   const settings = {
     dots: false,
@@ -38,15 +39,17 @@ export default function Awards() {
       },
     ],
   };
+
   return (
     <section className="awards">
       <Container>
         <div className="awards-header d-flex justify-content-center align-items-center">
-          <h2>Our Awards & Recognition</h2>
+          <h2>جوائزنا واعترافاتنا</h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia,
-            corporis dolorem tempora adipisci repudiandae reprehenderit at illum
-            laboriosam alias molestiae? Ullam deserunt ex totam recusandae?
+            لوريم إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت.
+            موليتيا، كوربوريس دولوريم تيمبورا أديبسي ريبودياندي ريهريبريت
+            آت إلوم لابوريوسام ألياس موليستي؟ أولام ديسيرنت إكس توتام
+            ريكوساند؟ 
           </p>
         </div>
         <div className="awards-slider text-center">
@@ -57,7 +60,7 @@ export default function Awards() {
                   src={"/images/awards/awards.png"}
                   width={150}
                   height={150}
-                  alt="awards"
+                  alt="جوائز"
                 />
               </div>
               <div className="slider-item">
@@ -65,7 +68,7 @@ export default function Awards() {
                   src={"/images/awards/awards.png"}
                   width={150}
                   height={150}
-                  alt="awards"
+                  alt="جوائز"
                 />
               </div>
               <div className="slider-item">
@@ -73,7 +76,7 @@ export default function Awards() {
                   src={"/images/awards/awards.png"}
                   width={150}
                   height={150}
-                  alt="awards"
+                  alt="جوائز"
                 />
               </div>
               <div className="slider-item">
@@ -81,7 +84,7 @@ export default function Awards() {
                   src={"/images/awards/awards.png"}
                   width={150}
                   height={150}
-                  alt="awards"
+                  alt="جوائز"
                 />
               </div>
               <div className="slider-item">
@@ -89,7 +92,7 @@ export default function Awards() {
                   src={"/images/awards/awards.png"}
                   width={150}
                   height={150}
-                  alt="awards"
+                  alt="جوائز"
                 />
               </div>
               <div className="slider-item">
@@ -97,7 +100,7 @@ export default function Awards() {
                   src={"/images/awards/awards.png"}
                   width={150}
                   height={150}
-                  alt="awards"
+                  alt="جوائز"
                 />
               </div>
             </Slider>

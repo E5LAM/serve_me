@@ -30,30 +30,30 @@ export default function Map() {
             </div>
           </Col>
           <Col md={6}>
-            <h2>(Keyword) Services All Over the (Location) Area</h2>
+            <h2>خدمات (الكلمة الرئيسية) في جميع أنحاء منطقة (الموقع)</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Mollitia, corporis dolorem tempora adipisci repudiandae
-              reprehenderit at illum laboriosam alias molestiae? Ullam deserunt
+              لوريم إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت.
+              موليتيا، كوربوريس دولوريم تمبورا أديبريسكي ريبوديندي
+              ريهينديرت آت إيلوم لابوريام ألياس موليتي؟ أولام ديسيرونت
             </p>
             <Row>
               <Col md={6}>
                 <ul className="list-unstyled">
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
+                  <li>لوريم إيبسوم</li>
+                  <li>لوريم إيبسوم</li>
+                  <li>لوريم إيبسوم</li>
+                  <li>لوريم إيبسوم</li>
+                  <li>لوريم إيبسوم</li>
                 </ul>
               </Col>
 
               <Col md={6}>
                 <ul className="list-unstyled">
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
+                  <li>لوريم إيبسوم</li>
+                  <li>لوريم إيبسوم</li>
+                  <li>لوريم إيبسوم</li>
+                  <li>لوريم إيبسوم</li>
+                  <li>لوريم إيبسوم</li>
                 </ul>
               </Col>
             </Row>
