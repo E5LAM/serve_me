@@ -1,4 +1,22 @@
-.awards{
-    padding: $big-sections-padding;
-    border-bottom: 2px solid $lines-color;
+.awards {
+  padding: $big-sections-padding;
+  border-bottom: 2px solid $lines-color;
+  .awards-slider {
+    .slider-item {
+      margin-top: 30px;
+      background-color: #2966cc;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      color: #fff;
+      padding: 10px;
+      width: 50% !important;
+      cursor: pointer;
+      img {
+        margin: auto;
+      }
+    }
+  }
 }
