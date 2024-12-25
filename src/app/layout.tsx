@@ -6,8 +6,8 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Ekhdmny | Home",
-  description: "Ekhdmny website",
+  title: "Serve Me | Home",
+  description: "Serve Me website",
 };
 
 export default function RootLayout({
