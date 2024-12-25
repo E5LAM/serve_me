@@ -15,6 +15,20 @@ a {
   color: #fff;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1E3B55;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(85, 135, 221, 0.5019607843);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
 .btn-prim {
   background-color: #1E3B55;
   border-color: #1E3B55;
