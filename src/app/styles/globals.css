@@ -88,6 +88,9 @@ a {
   padding: 50px 0;
   border-bottom: 2px solid rgba(34, 84, 170, 0.5019607843);
 }
+.testimonials h2 {
+  font-weight: bold;
+}
 .testimonials .slider-item {
   background-color: #2966CC;
   border-radius: 10px;

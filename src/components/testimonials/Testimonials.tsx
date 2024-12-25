@@ -61,8 +61,9 @@ export default function Testimonials() {
             </div>
           </Col>
           <Col md={6}>
-            <h2 className="text-center mb-5">Client Testimonials</h2>
+            
             <div className="testi-slider">
+            <h2 className="text-center mb-5 fw-bold">Client Testimonials</h2>
               <Slider {...settings}>
                 <div className="slider-item">
                   <div className="slider-box-header">

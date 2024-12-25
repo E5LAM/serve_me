@@ -1,6 +1,9 @@
 .testimonials {
   padding: $big-sections-padding;
   border-bottom: 2px solid $lines-color;
+  h2{
+    font-weight: bold;
+  }
   .slider-item {
     background-color:#2966CC ;
     border-radius: 10px;
