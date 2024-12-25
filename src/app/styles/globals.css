@@ -10,6 +10,11 @@ body {
   font-family: "Inter", serif;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .btn-prim {
   background-color: #1E3B55;
   border-color: #1E3B55;
@@ -51,4 +56,23 @@ body {
 }
 .primary-navbar .navbar .dropdown .dropdown-toggle::after {
   display: none;
+}
+
+.footer {
+  padding: 20px 0;
+  background-color: #1E3B55;
+  color: #fff;
+}
+.footer .footer-area-we-serve h3, .footer .footer-services h3, .footer .footer-services h3, .footer .footer-contact-information h3 {
+  color: #2254AA;
+}
+.footer .info .sebd-mail .fa-envelope {
+  color: #fff;
+  width: 30px !important;
+  height: 30px;
+}
+.footer .info ul li .fa-linkedin {
+  color: #fff;
+  width: 30px;
+  height: 30px;
 }/*# sourceMappingURL=globals.css.map */

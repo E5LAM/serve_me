@@ -1,0 +1,30 @@
+.footer {
+  padding: $small-sections-padding;
+  background-color: $background-color;
+  color: #fff;
+
+  .footer-area-we-serve,.footer-services, .footer-services,.footer-contact-information{
+    h3{
+      color: $primary-color;
+    }
+    
+  }
+  .info {
+    .sebd-mail {
+      .fa-envelope {
+        color: #fff;
+        width: 30px !important;
+        height: 30px;
+      }
+    }
+    ul {
+      li {
+        .fa-linkedin {
+          color: #fff;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
