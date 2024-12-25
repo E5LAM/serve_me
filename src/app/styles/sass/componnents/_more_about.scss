@@ -1,0 +1,16 @@
+.more-about {
+    padding: $big-sections-padding;
+  .more-about-box {
+    .more-about-header {
+      .fa-x {
+        color: #222;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+      }
+    }
+    .more-about-desc {
+        color: #777;
+    }
+  }
+}
