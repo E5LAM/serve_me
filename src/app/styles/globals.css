@@ -113,6 +113,10 @@ a {
 
 .more-about {
   padding: 50px 0;
+  border-bottom: 2px solid rgba(34, 84, 170, 0.5019607843);
+}
+.more-about .more-about-box {
+  margin: 10px 0;
 }
 .more-about .more-about-box .more-about-header .fa-x {
   color: #222;
@@ -122,6 +126,16 @@ a {
 }
 .more-about .more-about-box .more-about-desc {
   color: #777;
+}
+
+.fix2 {
+  padding: 50px 0;
+  border-bottom: 1px solid rgba(34, 84, 170, 0.5019607843);
+}
+
+.awards {
+  padding: 50px 0;
+  border-bottom: 2px solid rgba(34, 84, 170, 0.5019607843);
 }
 
 .footer {

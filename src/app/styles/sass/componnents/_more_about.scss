@@ -1,6 +1,8 @@
 .more-about {
     padding: $big-sections-padding;
+    border-bottom: 2px solid $lines-color;
   .more-about-box {
+    margin: 10px 0;
     .more-about-header {
       .fa-x {
         color: #222;
