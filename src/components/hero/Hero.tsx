@@ -2,6 +2,9 @@
 
 export default function Hero() {
   return (
-    <div>Hero</div>
+    <section className="hero">
+      
+      
+    </section>
   )
 }

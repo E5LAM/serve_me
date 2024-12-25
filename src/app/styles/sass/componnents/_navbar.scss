@@ -1,0 +1,11 @@
+.primary-navbar {
+  padding: $smaill-sections-padding;
+
+  .navbar {
+    .dropdown {
+      .dropdown-toggle::after {
+        display: none ;
+      }
+    }
+  }
+}

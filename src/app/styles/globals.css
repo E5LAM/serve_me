@@ -12,12 +12,16 @@ body {
 
 .btn-prim {
   background-color: #1E3B55;
+  border-color: #1E3B55;
   color: #fff;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 2px 20px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 .upperbar {
@@ -40,4 +44,11 @@ body {
 }
 .upperbar .social-icons ul li .fa-linkedin {
   color: #fff;
+}
+
+.primary-navbar {
+  padding: 20px 0;
+}
+.primary-navbar .navbar .dropdown .dropdown-toggle::after {
+  display: none;
 }/*# sourceMappingURL=globals.css.map */
