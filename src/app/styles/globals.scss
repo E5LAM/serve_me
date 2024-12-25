@@ -1,0 +1,20 @@
+@import "./sass/tools/variables";
+@import "./sass/tools/mixins";
+@import "./sass/tools/functions";
+@import "./sass/layout/mediaquery";
+@import "./sass//base/mainroles";
+@import "./sass/layout/header";
+@import "./sass/componnents/buttons";
+@import "./sass/componnents/navbar";
+@import "./sass/layout/footer";
+
+//pages
+
+@import "./sass/pages/home";
+@import "./sass/pages/about";
+@import "./sass/pages/contact";
+@import "./sass/pages/main-service";
+@import "./sass/pages/privacy-policy";
+@import "./sass/pages/sub-service";
+@import "./sass/pages/terms-conditions";
+@import "./sass/pages/_location-page";
