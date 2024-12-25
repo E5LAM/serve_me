@@ -17,7 +17,7 @@ a {
 
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: #1e3b55;
+  background-color: #1E3B55;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -36,8 +36,8 @@ h2 {
 }
 
 .btn-prim {
-  background-color: #1e3b55;
-  border-color: #1e3b55;
+  background-color: #1E3B55;
+  border-color: #1E3B55;
   color: #fff;
   font-size: 20px;
   font-weight: 400;
@@ -50,7 +50,7 @@ h2 {
 }
 
 .upperbar {
-  background-color: #1e3b55;
+  background-color: #1E3B55;
   color: #fff;
   padding: 20px 0;
 }
@@ -108,7 +108,7 @@ h2 {
   color: #222;
 }
 .testimonials .slider-item {
-  background-color: #2966cc;
+  background-color: #2966CC;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -200,7 +200,7 @@ h2 {
 
 .footer {
   padding: 20px 0;
-  background-color: #1e3b55;
+  background-color: #1E3B55;
   color: #fff;
 }
 .footer .footer-logo {
@@ -211,7 +211,7 @@ h2 {
 .footer .footer-services h3,
 .footer .footer-contact-information h3,
 .footer .footer-terms-condition h3 {
-  color: #2254aa;
+  color: #2254AA;
 }
 .footer .info .sebd-mail .fa-envelope {
   color: #fff;
@@ -241,4 +241,132 @@ h2 {
   width: 30px;
   height: 30px;
   margin-left: 10px;
-} /*# sourceMappingURL=globals.css.map */
+}
+
+.social-links {
+  margin: 1rem 0;
+}
+
+.social-link-container {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.social-link-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  position: relative;
+  border: 2px solid transparent;
+}
+
+.social-link-circle:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-tooltip {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.social-link-container:hover .social-tooltip {
+  opacity: 1;
+  visibility: visible;
+  bottom: -25px;
+}
+
+/* Add a small arrow to the tooltip */
+.social-tooltip::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid #333;
+}
+
+@media (max-width: 768px) {
+  .social-link-circle {
+    width: 50px;
+    height: 50px;
+  }
+  .social-links {
+    gap: 0.75rem !important;
+  }
+}
+.mainservText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.mainservText p {
+  font-size: 1.2rem;
+  color: #1e3b55;
+}
+.mainservText .reverse {
+  flex-direction: row-reverse;
+}
+
+.SubServicesList {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.SubServicesList a {
+  color: #1E3B55;
+  width: calc(50% - 10px);
+  padding: 10px 20px;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 7px;
+}
+
+@media (max-width: 800px) {
+  .SubServicesList {
+    flex-direction: column;
+  }
+  .SubServicesList a {
+    width: 100%;
+  }
+}
+.service-offered {
+  padding: 5rem 0;
+  background-color: #fff; /* or any color you prefer */
+}
+
+.service-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.service-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #1E3B55; /* or any color you prefer */
+}/*# sourceMappingURL=globals.css.map */
