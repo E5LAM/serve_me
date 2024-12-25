@@ -1,0 +1,33 @@
+.upperbar {
+  background-color: $background-color;
+  color: #fff;
+  padding: $smaill-sections-padding;
+
+  .contact-info {
+    ul {
+      li {
+        h4{
+            font-size: 18px
+            ;
+        }
+        &:not(:last-child) {
+          border-left: 1px solid #fff;
+        }
+      }
+    }
+  }
+  .social-icons {
+    ul {
+      li {
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        .fa-linkedin {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

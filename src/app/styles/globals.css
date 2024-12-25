@@ -1,1 +1,43 @@
-/*# sourceMappingURL=globals.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", serif;
+}
+
+.btn-prim {
+  background-color: #1E3B55;
+  color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.upperbar {
+  background-color: #1E3B55;
+  color: #fff;
+  padding: 20px 0;
+}
+.upperbar .contact-info ul li h4 {
+  font-size: 18px;
+}
+.upperbar .contact-info ul li:not(:last-child) {
+  border-left: 1px solid #fff;
+}
+.upperbar .social-icons ul li {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.upperbar .social-icons ul li .fa-linkedin {
+  color: #fff;
+}/*# sourceMappingURL=globals.css.map */

@@ -1,7 +1,3 @@
-
-
 export default function PrimaryNavbar() {
-  return (
-    <div>PrimaryNavbar</div>
-  )
+  return <div>PrimaryNavbar</div>;
 }
