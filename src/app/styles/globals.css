@@ -8,6 +8,8 @@
 
 body {
   font-family: "Cairo", serif;
+  max-width: 100dvw;
+  overflow-x: hidden;
 }
 
 a {
@@ -17,7 +19,7 @@ a {
 
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: #1E3B55;
+  background-color: #1e3b55;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -30,14 +32,18 @@ a {
 }
 
 h2 {
-  color: #2254AA;
+  color: #2254aa;
   font-size: 50px;
   font-weight: bold;
 }
 
+ul {
+  list-style: inside;
+}
+
 .btn-prim {
-  background-color: #1E3B55;
-  border-color: #1E3B55;
+  background-color: #1e3b55;
+  border-color: #1e3b55;
   color: #fff;
   font-size: 20px;
   font-weight: 400;
@@ -50,7 +56,7 @@ h2 {
 }
 
 .upperbar {
-  background-color: #1E3B55;
+  background-color: #1e3b55;
   color: #fff;
   padding: 20px 0;
 }
@@ -108,7 +114,7 @@ h2 {
   color: #222;
 }
 .testimonials .slider-item {
-  background-color: #2966CC;
+  background-color: #2966cc;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -175,12 +181,19 @@ h2 {
   border-bottom: 2px solid rgba(34, 84, 170, 0.5019607843);
 }
 
+.mapouter,
+.gmap_canvas,
+.gmap_iframe {
+  max-width: 90dvw;
+  overflow: hidden;
+}
+
 .asked {
   padding: 50px 0;
   border-bottom: 2px solid rgba(34, 84, 170, 0.5019607843);
 }
 .asked .accordion-button {
-  background-color: #1E3B55;
+  background-color: #1e3b55;
   color: #fff;
   margin-left: 0px;
 }
@@ -200,18 +213,21 @@ h2 {
 
 .footer {
   padding: 20px 0;
-  background-color: #1E3B55;
+  background-color: #1e3b55;
   color: #fff;
 }
 .footer .footer-logo {
-  color: #fff;
+  color: #abcaff;
 }
 .footer .footer-area-we-serve h3,
 .footer .footer-services h3,
 .footer .footer-services h3,
 .footer .footer-contact-information h3,
 .footer .footer-terms-condition h3 {
-  color: #2254AA;
+  color: #abcaff;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  margin-bottom: 1.6rem;
 }
 .footer .info .sebd-mail .fa-envelope {
   color: #fff;
@@ -335,7 +351,7 @@ h2 {
   flex-wrap: wrap;
 }
 .SubServicesList a {
-  color: #1E3B55;
+  color: #1e3b55;
   width: calc(50% - 10px);
   padding: 10px 20px;
   background-color: #eaeaea;
