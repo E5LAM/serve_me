@@ -83,6 +83,7 @@ ul {
 }
 .primary-navbar .navbar a {
   color: #222;
+  text-align: right;
 }
 .primary-navbar .navbar .navbar-brand {
   font-size: 40px;
