@@ -43,13 +43,12 @@ export default function Awards() {
   return (
     <section className="awards">
       <Container>
-        <div className="awards-header d-flex justify-content-center align-items-center">
+        <div className="awards-header d-flex flex-wrap justify-content-center align-items-center">
           <h2>جوائزنا واعترافاتنا</h2>
           <p>
-            لوريم إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت.
-            موليتيا، كوربوريس دولوريم تيمبورا أديبسي ريبودياندي ريهريبريت
-            آت إلوم لابوريوسام ألياس موليستي؟ أولام ديسيرنت إكس توتام
-            ريكوساند؟ 
+            لوريم إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت. موليتيا،
+            كوربوريس دولوريم تيمبورا أديبسي ريبودياندي ريهريبريت آت إلوم
+            لابوريوسام ألياس موليستي؟ أولام ديسيرنت إكس توتام ريكوساند؟
           </p>
         </div>
         <div className="awards-slider text-center">

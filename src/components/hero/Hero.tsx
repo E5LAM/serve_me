@@ -7,14 +7,13 @@ export default function Hero() {
     <section className="hero">
       <Container>
         <Row>
-          <Col md={6}>
+          <Col md={6} className="mb-md-0 mb-4">
             <div className="hero-info">
               <h1>(الكلمة الرئيسية) + (الموقع الكبير)</h1>
               <p>
                 لوريم إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت.
-                موليتيا، كوربوريس دولوريم تيمبورا أديبسي ريبودياندي
-                ريهريبريت آت إلوم لابوريوسام ألياس موليستي؟ أولام ديسيرنت إكس
-                توتام ريكوساند؟
+                موليتيا، كوربوريس دولوريم تيمبورا أديبسي ريبودياندي ريهريبريت آت
+                إلوم لابوريوسام ألياس موليستي؟ أولام ديسيرنت إكس توتام ريكوساند؟
               </p>
               <div className="cta d-flex justify-content-start align-items-center gap-3">
                 <p className="mb-0">(XXX) 123 - 4567</p>
