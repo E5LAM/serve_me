@@ -154,7 +154,7 @@ export default function Footer() {
                   <Link href="#">الشروط والأحكام</Link>
                 </li>
                 <li>
-                  <Link href="#">سياسة الخصوصية</Link>
+                  <Link href="/privacy-policy">سياسة الخصوصية</Link>
                 </li>
                 <li>
                   <Link href="#">خريطة الموقع</Link>

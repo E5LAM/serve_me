@@ -355,6 +355,35 @@ h2 {
     width: 100%;
   }
 }
+.privacy-policy {
+  padding: 50px 0;
+}
+.privacy-policy h2,
+.privacy-policy h3 {
+  color: #2254AA;
+  font-size: 40px;
+  font-weight: bold;
+}
+.privacy-policy h3 {
+  margin: 30px 0;
+}
+.privacy-policy h6 {
+  color: #2254AA;
+  font-size: 15px;
+  font-weight: bold;
+}
+.privacy-policy ul {
+  list-style: "-";
+}
+.privacy-policy ul li {
+  color: #888;
+}
+.privacy-policy p {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #888;
+}
+
 .service-offered {
   padding: 5rem 0;
   background-color: #fff; /* or any color you prefer */
