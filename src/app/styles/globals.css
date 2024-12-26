@@ -313,8 +313,6 @@ h2 {
     gap: 0.75rem !important;
   }
 }
-<<<<<<< HEAD
-=======
 .mainservText {
   width: 100%;
   display: flex;
@@ -356,7 +354,6 @@ h2 {
     width: 100%;
   }
 }
->>>>>>> 61b53aeba3c3b7ef2e3a691f266525b44e1b562e
 .service-offered {
   padding: 5rem 0;
   background-color: #fff; /* or any color you prefer */
@@ -369,13 +366,7 @@ h2 {
 }
 
 .service-description {
-<<<<<<< HEAD
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #666; /* or any color you prefer */
-=======
   font-size: 1.2rem;
   line-height: 1.6;
   color: #1E3B55; /* or any color you prefer */
->>>>>>> 61b53aeba3c3b7ef2e3a691f266525b44e1b562e
 }/*# sourceMappingURL=globals.css.map */
