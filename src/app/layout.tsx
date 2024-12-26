@@ -6,8 +6,11 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Serve Me | Home",
-  description: "Serve Me website",
+  title: {
+    template: "%s | أخدمنى",
+    default: "أخدمنى | الرئيسية",
+  },
+  description: "أخدمنى | موقع لتقديم خدمات النظافة والتنظيف منزلي وتجاري",
 };
 
 export default function RootLayout({
@@ -22,7 +25,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
-          </ThemeProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

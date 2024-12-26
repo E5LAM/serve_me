@@ -7,7 +7,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 export default function PrimaryNavbar() {
   return (
-    <section className="primary-navbar ">
+    <section className="primary-navbar">
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
           <div className="navbar-brand">
@@ -30,8 +30,8 @@ export default function PrimaryNavbar() {
                   <Link href={"/contact"}>اتصل بنا</Link>
                 </li>
                 <li>
-                  <NavDropdown title="الخدمات الفرعية" id="basic-nav-dropdown" >
-                    <NavDropdown.Item href="#action/3.1" >
+                  <NavDropdown title="الخدمات الفرعية" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">
                       الخدمة الأولى
                     </NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">
