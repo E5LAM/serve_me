@@ -1,23 +1,23 @@
 .primary-navbar {
-  padding: $small-sections-padding;
   border-bottom: 2px solid $lines-color;
   .navbar {
-     a{
+    padding: $small-sections-padding;
+
+    a {
       color: #222;
       text-align: right;
-     }
-     .navbar-brand{
+    }
+    .navbar-brand {
       font-size: 40px;
       font-weight: bold;
       color: #222;
-
-     }
-     .nav-link{
+    }
+    .nav-link {
       padding: 0;
-     }
+    }
     .dropdown {
       .dropdown-toggle::after {
-        display: none ;
+        display: none;
       }
     }
   }
