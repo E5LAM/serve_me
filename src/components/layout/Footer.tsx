@@ -11,52 +11,16 @@ export default function Footer() {
       <Container>
         <Row>
           <Col md={4}>
-            <div className="footer-info text-capitalize">
+            <div className="footer-info text-capitalize footer-contact-information">
               <h2 className="footer-logo">اخدمني</h2>
               <h3>اسم الشركة (هنا)</h3>
               <p>
                 لوريم إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت.
-                موليتيا، كوربوريس دولوريم تيمبورا أديبسي ريبودياندي
-                ريبريهاندرات آت إلوم لوريم إيبسوم، دولور سيت أميت كونسكتتور
-                أديبيسيسينغ إيليت. موليتيا، كوربوريس دولوريم تيمبورا أديبسي
-                ريبودياندي ريبريهاندرات آت إلوم
+                موليتيا، كوربوريس دولوريم تيمبورا أديبسي ريبودياندي ريبريهاندرات
+                آت إلوم لوريم إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ
+                إيليت. موليتيا، كوربوريس دولوريم تيمبورا أديبسي ريبودياندي
+                ريبريهاندرات آت إلوم
               </p>
-
-              <div className="info">
-                <h3>ترخيص # XX - XXXXXXX</h3>
-                <div className="send-mail d-flex">
-                  <FontAwesomeIcon
-                    icon={faEnvelope}
-                    style={{ color: "#fff", width: "30px", height: "30px" }}
-                  />
-                  <span>info@thewebsite.com</span>
-                </div>
-                <div className="social-media-icons my-4">
-                  <h5 className="mb-3">ابحث عنا على الإنترنت</h5>
-                  <ul className="list-unstyled d-flex gap-3">
-                    <li>
-                      <Link href="#">
-                        <FontAwesomeIcon icon={faLinkedin} />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <FontAwesomeIcon icon={faLinkedin} />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <FontAwesomeIcon icon={faLinkedin} />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <FontAwesomeIcon icon={faLinkedin} />
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </Col>
           <Col md={4}>
@@ -131,6 +95,43 @@ export default function Footer() {
                   <Link href="#">رابط صفحة المنطقة</Link>
                 </li>
               </ul>
+            </div>
+          </Col>
+          <Col md={4}>
+            <div className="info footer-contact-information">
+              <h3>ترخيص # XX - XXXXXXX</h3>
+              <div className="send-mail d-flex">
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  style={{ color: "#fff", width: "30px", height: "30px" }}
+                />
+                <span>info@thewebsite.com</span>
+              </div>
+              <div className="social-media-icons my-4">
+                <h5 className="mb-3">ابحث عنا على الإنترنت</h5>
+                <ul className="list-unstyled d-flex gap-3">
+                  <li>
+                    <Link href="#">
+                      <FontAwesomeIcon icon={faLinkedin} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#">
+                      <FontAwesomeIcon icon={faLinkedin} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#">
+                      <FontAwesomeIcon icon={faLinkedin} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#">
+                      <FontAwesomeIcon icon={faLinkedin} />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </Col>
           <Col md={4}>
@@ -272,7 +273,8 @@ export default function Footer() {
                   <p>(123) 456 - 7890</p>
                 </div>
               </div>
-            </Col>      <Col md={3}>
+            </Col>{" "}
+            <Col md={3}>
               <div className="footer-location-box ">
                 <div className="box-header d-flex justify-content-center align-items-center">
                   <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
@@ -289,7 +291,8 @@ export default function Footer() {
                   <p>(123) 456 - 7890</p>
                 </div>
               </div>
-            </Col>      <Col md={3}>
+            </Col>{" "}
+            <Col md={3}>
               <div className="footer-location-box ">
                 <div className="box-header d-flex justify-content-center align-items-center">
                   <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>

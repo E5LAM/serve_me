@@ -3,8 +3,8 @@
   background-color: $background-color;
   color: #fff;
 
-  .footer-logo{
-    color: #fff;
+  .footer-logo {
+    color: $footer-title;
   }
   .footer-area-we-serve,
   .footer-services,
@@ -12,7 +12,10 @@
   .footer-contact-information,
   .footer-terms-condition {
     h3 {
-      color: $primary-color;
+      color: $footer-title;
+      text-decoration: underline;
+      text-underline-offset: 10px;
+      margin-bottom: 1.6rem;
     }
   }
   .info {
