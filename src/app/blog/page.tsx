@@ -147,19 +147,19 @@ export default function Page() {
                   <li>
                     <FontAwesomeIcon
                       icon={faLinkedin}
-                      style={{ width: "30px" }}
+                      style={{ width: "30px", color: "#0a66c2" }}
                     />
                   </li>
                   <li>
                     <FontAwesomeIcon
                       icon={faLinkedin}
-                      style={{ width: "30px" }}
+                      style={{ width: "30px", color: "#0a66c2" }}
                     />
                   </li>
                   <li>
                     <FontAwesomeIcon
                       icon={faLinkedin}
-                      style={{ width: "30px" }}
+                      style={{ width: "30px", color: "#0a66c2" }}
                     />
                   </li>
                 </ul>
