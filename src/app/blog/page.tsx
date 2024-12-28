@@ -1,3 +1,6 @@
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, Container, Row } from "react-bootstrap";
 
 export default function Page() {
@@ -130,32 +133,36 @@ export default function Page() {
               </Col>
               <Col md={6}>
                 <h2>خدمات (الكلمة الرئيسية) في جميع أنحاء منطقة (الموقع)</h2>
-                <p>
-                  لوريم إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت.
-                  موليتيا، كوربوريس دولوريم تمبورا أديبريسكي ريبوديندي ريهينديرت
-                  آت إيلوم لابوريام ألياس موليتي؟ أولام ديسيرونت
-                </p>
-                <Row>
-                  <Col md={6}>
-                    <ul className="list-unstyled text-md-end text-center">
-                      <li>لوريم إيبسوم</li>
-                      <li>لوريم إيبسوم</li>
-                      <li>لوريم إيبسوم</li>
-                      <li>لوريم إيبسوم</li>
-                      <li>لوريم إيبسوم</li>
-                    </ul>
-                  </Col>
+                <p>1234 Anywhere PL someCity, XX</p>
+                <h6>(123) 456 - 7890</h6>
+                <div className="mail">
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    style={{ width: "30px" }}
+                  />
+                  <span className="me-2">info@thewebsite.com</span>
+                </div>
 
-                  <Col md={6}>
-                    <ul className="list-unstyled text-md-end text-center">
-                      <li>لوريم إيبسوم</li>
-                      <li>لوريم إيبسوم</li>
-                      <li>لوريم إيبسوم</li>
-                      <li>لوريم إيبسوم</li>
-                      <li>لوريم إيبسوم</li>
-                    </ul>
-                  </Col>
-                </Row>
+                <ul className="list-unstyled d-flex align-items-center gap-3 text-md-end text-center mt-3">
+                  <li>
+                    <FontAwesomeIcon
+                      icon={faLinkedin}
+                      style={{ width: "30px" }}
+                    />
+                  </li>
+                  <li>
+                    <FontAwesomeIcon
+                      icon={faLinkedin}
+                      style={{ width: "30px" }}
+                    />
+                  </li>
+                  <li>
+                    <FontAwesomeIcon
+                      icon={faLinkedin}
+                      style={{ width: "30px" }}
+                    />
+                  </li>
+                </ul>
               </Col>
             </Row>
           </Container>

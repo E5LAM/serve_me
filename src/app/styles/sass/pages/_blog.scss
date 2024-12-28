@@ -24,11 +24,16 @@
     h2 {
       margin: 25px 0;
     }
-    .mapouter,
-    .gmap_canvas,
-    .gmap_iframe {
-      max-width: 90dvw;
-      overflow: hidden;
+    .map {
+      h2 {
+        margin-bottom: 20px;
+      }
+      .mapouter,
+      .gmap_canvas,
+      .gmap_iframe {
+        max-width: 90dvw;
+        overflow: hidden;
+      }
     }
   }
 }
