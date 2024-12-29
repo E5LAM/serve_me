@@ -152,7 +152,7 @@ export default function Footer() {
               <h3>الشروط والأحكام</h3>
               <ul>
                 <li>
-                  <Link href="#">الشروط والأحكام</Link>
+                  <Link href="/terms-condition">الشروط والأحكام</Link>
                 </li>
                 <li>
                   <Link href="/privacy-policy">سياسة الخصوصية</Link>
