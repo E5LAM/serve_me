@@ -33,44 +33,44 @@ export default function Testimonials({ cols }: { cols?: number }) {
 
   return (
     <Col md={cols}>
-      <div className="testi-slider">
-        <h2 className="text-center mb-5 fw-bold">Client Testimonials</h2>
+      <div className="testi-slider text-end">
+        <h2 className="text-center mb-5 fw-bold">أراء العملاء</h2>
         <Slider {...settings}>
           <div className="slider-item">
             <div className="slider-box-header">
-              <h4>John Doe</h4>
-              <p>CEO, Company</p>
+              <h4>محمد أحمد</h4>
+              <p>مدير، شركة</p>
             </div>
             <div className="slider-box-rate">⭐⭐⭐⭐⭐</div>
             <div className="slider-box-desc">
-              <p>Excellent service! Highly recommended for professional work</p>
+              <p>خدمة ممتازة! ننصح بها لجميع الأعمال الاحترافية</p>
             </div>
           </div>
           <div className="slider-item">
             <div className="slider-box-header">
-              <h4>Jane Smith</h4>
-              <p>Manager, Business</p>
+              <h4>أميرة علي</h4>
+              <p>مديرة، أعمال</p>
             </div>
             <div className="slider-box-rate">⭐⭐⭐⭐</div>
             <div className="slider-box-desc">
-              <p>Great experience, will definitely use again!</p>
+              <p>تجربة رائعة، سنستخدمها مرة أخرى!</p>
             </div>
           </div>
           <div className="slider-item">
             <div className="slider-box-header">
-              <h4>Mike Taylor</h4>
-              <p>Freelancer</p>
+              <h4>عمر محمد</h4>
+              <p>متعاون</p>
             </div>
             <div className="slider-box-rate">⭐⭐⭐⭐⭐</div>
             <div className="slider-box-desc">
-              <p>Very satisfied with the outcome!</p>
+              <p>كنا راضيين جداً عن النتيجة!</p>
             </div>
           </div>
         </Slider>
       </div>
       <div className="btn-out-serv text-center">
         <Link href={"#"} className="">
-          <button className="btn-prim mt-4">Our Reviews</button>
+          <button className="btn-prim mt-4">مراجعتنا</button>
         </Link>
       </div>
     </Col>
