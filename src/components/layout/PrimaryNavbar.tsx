@@ -10,45 +10,47 @@ export default function PrimaryNavbar() {
     <section className="primary-navbar">
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
-          <Navbar.Brand href="#home">logo</Navbar.Brand>
+          <div className="navbar-brand">
+            <Link href={"/"}>اخدمني</Link>
+          </div>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto">
               <ul className="list-unstyled d-flex gap-3 m-0">
                 <li>
-                  <Link href={"/"}>Home</Link>
+                  <Link href={"/"}>الرئيسية</Link>
                 </li>
                 <li>
-                  <Link href={"/about"}>about</Link>
+                  <Link href={"/about"}>من نحن</Link>
                 </li>
                 <li>
-                  <Link href={"/main-service"}>main service</Link>
+                  <Link href={"/main-service"}>الخدمات الرئيسية</Link>
                 </li>
                 <li>
-                  <Link href={"/contact"}>contact</Link>
+                  <Link href={"/contact"}>اتصل بنا</Link>
                 </li>
                 <li>
-                  <NavDropdown title="sub service" id="basic-nav-dropdown">
+                  <NavDropdown title="الخدمات الفرعية" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">
-                      Action
+                      الخدمة الأولى
                     </NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">
-                      Another action
+                      الخدمة الثانية
                     </NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.3">
-                      Something
+                      خدمة أخرى
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action/3.4">
-                      Separated link
+                      رابط منفصل
                     </NavDropdown.Item>
                   </NavDropdown>
                 </li>
               </ul>
             </Nav>
             <div className="cta d-flex justify-content-center align-items-center gap-3">
-              <p className="mb-0">(XXX) 123 - 4567</p>
-              <button className="btn-prim">cta here</button>
+              <p className="mb-0">123 - 4567 (XXX)</p>
+              <button className="btn-prim">طلب الآن</button>
             </div>
           </Navbar.Collapse>
         </Container>

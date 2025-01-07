@@ -1,4 +1,11 @@
-.map{
-    padding: $big-sections-padding;
-    border-bottom: 2px solid $lines-color;
+.map {
+  padding: $big-sections-padding;
+  border-bottom: 2px solid $lines-color;
+}
+
+.mapouter,
+.gmap_canvas,
+.gmap_iframe {
+  max-width: 90dvw;
+  overflow: hidden;
 }

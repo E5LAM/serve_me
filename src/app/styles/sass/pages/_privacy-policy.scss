@@ -1,0 +1,29 @@
+.privacy-policy {
+  padding: $big-sections-padding;
+  h2,
+  h3 {
+    color: $primary-color;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  h3 {
+    margin: 30px 0;
+  }
+  h6{
+    color: $primary-color;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  ul{
+    list-style: "-";
+    li{
+        color: #888;
+    }
+  }
+  p{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #888;
+   
+  }
+}

@@ -11,134 +11,135 @@ export default function Footer() {
       <Container>
         <Row>
           <Col md={4}>
-            <div className="footer-info text-capitalize">
-              <h2>Logo</h2>
-              <h3>Company Name (Here)</h3>
+            <div className="footer-info text-capitalize footer-contact-information">
+              <h2 className="footer-logo">اخدمني</h2>
+              <h3>اسم الشركة (هنا)</h3>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Mollitia, corporis dolorem tempora adipisci repudiandae
-                reprehenderit at illum Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Mollitia, corporis dolorem tempora adipisci
-                repudiandae reprehenderit at illum
+                لوريم إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت.
+                موليتيا، كوربوريس دولوريم تيمبورا أديبسي ريبودياندي ريبريهاندرات
+                آت إلوم لوريم إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ
+                إيليت. موليتيا، كوربوريس دولوريم تيمبورا أديبسي ريبودياندي
+                ريبريهاندرات آت إلوم
               </p>
-
-              <div className="info">
-                <h3>Lic # XX - XXXXXXX</h3>
-                <div className="send-mail d-flex">
-                  <FontAwesomeIcon
-                    icon={faEnvelope}
-                    style={{ color: "#fff", width: "30px", height: "30px" }}
-                  />
-                  <span>info@thewebsite.com</span>
-                </div>
-                <div className="social-media-icons my-4">
-                  <h5 className="mb-3">find us online </h5>
-                  <ul className="list-unstyled d-flex gap-3">
-                    <li>
-                      <Link href="#">
-                        <FontAwesomeIcon icon={faLinkedin} />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <FontAwesomeIcon icon={faLinkedin} />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <FontAwesomeIcon icon={faLinkedin} />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <FontAwesomeIcon icon={faLinkedin} />
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </Col>
           <Col md={4}>
             <div className="footer-area-we-serve">
-              <h3>Areas We Serve</h3>
+              <h3>المناطق التي نخدمها</h3>
               <ul>
                 <li>
-                  <Link href="#">Area Page Link</Link>
-                </li>{" "}
+                  <Link href="#">رابط صفحة المنطقة</Link>
+                </li>
                 <li>
-                  <Link href="#">Area Page Link</Link>
-                </li>{" "}
+                  <Link href="#">رابط صفحة المنطقة</Link>
+                </li>
                 <li>
-                  <Link href="#">Area Page Link</Link>
-                </li>{" "}
+                  <Link href="#">رابط صفحة المنطقة</Link>
+                </li>
                 <li>
-                  <Link href="#">Area Page Link</Link>
-                </li>{" "}
+                  <Link href="#">رابط صفحة المنطقة</Link>
+                </li>
                 <li>
-                  <Link href="#">Area Page Link</Link>
-                </li>{" "}
+                  <Link href="#">رابط صفحة المنطقة</Link>
+                </li>
                 <li>
-                  <Link href="#">Area Page Link</Link>
-                </li>{" "}
+                  <Link href="#">رابط صفحة المنطقة</Link>
+                </li>
                 <li>
-                  <Link href="#">Area Page Link</Link>
-                </li>{" "}
+                  <Link href="#">رابط صفحة المنطقة</Link>
+                </li>
                 <li>
-                  <Link href="#">Area Page Link</Link>
-                </li>{" "}
+                  <Link href="#">رابط صفحة المنطقة</Link>
+                </li>
                 <li>
-                  <Link href="#">Area Page Link</Link>
-                </li>{" "}
+                  <Link href="#">رابط صفحة المنطقة</Link>
+                </li>
                 <li>
-                  <Link href="#">Area Page Link</Link>
+                  <Link href="#">رابط صفحة المنطقة</Link>
                 </li>
               </ul>
             </div>
           </Col>
           <Col md={4}>
             <div className="footer-services">
-              <h3>Our (Keyword) Services</h3>
+              <h3>خدماتنا (الكلمة الرئيسية)</h3>
               <ul>
                 <li>
-                  <Link href="#">Area Page Link</Link>
-                </li>{" "}
+                  <Link href="#">رابط صفحة المنطقة</Link>
+                </li>
                 <li>
-                  <Link href="#">Area Page Link</Link>
-                </li>{" "}
+                  <Link href="#">رابط صفحة المنطقة</Link>
+                </li>
                 <li>
-                  <Link href="#">Area Page Link</Link>
-                </li>{" "}
+                  <Link href="#">رابط صفحة المنطقة</Link>
+                </li>
                 <li>
-                  <Link href="#">Area Page Link</Link>
-                </li>{" "}
+                  <Link href="#">رابط صفحة المنطقة</Link>
+                </li>
                 <li>
-                  <Link href="#">Area Page Link</Link>
-                </li>{" "}
+                  <Link href="#">رابط صفحة المنطقة</Link>
+                </li>
                 <li>
-                  <Link href="#">Area Page Link</Link>
-                </li>{" "}
+                  <Link href="#">رابط صفحة المنطقة</Link>
+                </li>
                 <li>
-                  <Link href="#">Area Page Link</Link>
-                </li>{" "}
+                  <Link href="#">رابط صفحة المنطقة</Link>
+                </li>
                 <li>
-                  <Link href="#">Area Page Link</Link>
-                </li>{" "}
+                  <Link href="#">رابط صفحة المنطقة</Link>
+                </li>
                 <li>
-                  <Link href="#">Area Page Link</Link>
-                </li>{" "}
+                  <Link href="#">رابط صفحة المنطقة</Link>
+                </li>
                 <li>
-                  <Link href="#">Area Page Link</Link>
+                  <Link href="#">رابط صفحة المنطقة</Link>
                 </li>
               </ul>
             </div>
           </Col>
           <Col md={4}>
+            <div className="info footer-contact-information">
+              <h3>ترخيص # XX - XXXXXXX</h3>
+              <div className="send-mail d-flex">
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  style={{ color: "#fff", width: "30px", height: "30px" }}
+                />
+                <span>info@thewebsite.com</span>
+              </div>
+              <div className="social-media-icons my-4">
+                <h5 className="mb-3">ابحث عنا على الإنترنت</h5>
+                <ul className="list-unstyled d-flex gap-3">
+                  <li>
+                    <Link href="#">
+                      <FontAwesomeIcon icon={faLinkedin} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#">
+                      <FontAwesomeIcon icon={faLinkedin} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#">
+                      <FontAwesomeIcon icon={faLinkedin} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#">
+                      <FontAwesomeIcon icon={faLinkedin} />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </Col>
+          <Col md={4}>
             <div className="footer-contact-information">
-              <h3>Contact Information</h3>
+              <h3>معلومات الاتصال</h3>
               <ul>
                 <li>
-                  <Link href="#">1234 Anywhere Place</Link>
+                  <Link href="#">1234 أي مكان هنا</Link>
                 </li>
                 <li>
                   <Link href="#">(123) 456 - 7890</Link>
@@ -148,16 +149,16 @@ export default function Footer() {
           </Col>
           <Col md={4}>
             <div className="footer-terms-condition">
-              <h3>Terms & Condition</h3>
+              <h3>الشروط والأحكام</h3>
               <ul>
                 <li>
-                  <Link href="#">Terms & Condition</Link>
+                  <Link href="/terms-condition">الشروط والأحكام</Link>
                 </li>
                 <li>
-                  <Link href="#">Privacy Policy</Link>
+                  <Link href="/privacy-policy">سياسة الخصوصية</Link>
                 </li>
                 <li>
-                  <Link href="#">Sitemap</Link>
+                  <Link href="#">خريطة الموقع</Link>
                 </li>
               </ul>
             </div>
@@ -168,215 +169,215 @@ export default function Footer() {
             <Col md={3}>
               <div className="footer-location-box ">
                 <div className="box-header d-flex justify-content-center align-items-center">
-                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
                   <FontAwesomeIcon icon={faX} />
                 </div>
 
                 <div className="address">
-                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
-                  <Link href={"#"}>Find us on the map</Link>
+                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
+                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
                 </div>
 
                 <div className="phone">
-                  <h5>Phone Number</h5>
+                  <h5>رقم الهاتف</h5>
                   <p>(123) 456 - 7890</p>
                 </div>
               </div>
             </Col>
             <Col md={3}>
-            <div className="footer-location-box ">
+              <div className="footer-location-box ">
                 <div className="box-header d-flex justify-content-center align-items-center">
-                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
                   <FontAwesomeIcon icon={faX} />
                 </div>
 
                 <div className="address">
-                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
-                  <Link href={"#"}>Find us on the map</Link>
+                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
+                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
                 </div>
 
                 <div className="phone">
-                  <h5>Phone Number</h5>
+                  <h5>رقم الهاتف</h5>
                   <p>(123) 456 - 7890</p>
                 </div>
               </div>
             </Col>
             <Col md={3}>
-            <div className="footer-location-box ">
+              <div className="footer-location-box ">
                 <div className="box-header d-flex justify-content-center align-items-center">
-                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
                   <FontAwesomeIcon icon={faX} />
                 </div>
 
                 <div className="address">
-                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
-                  <Link href={"#"}>Find us on the map</Link>
+                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
+                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
                 </div>
 
                 <div className="phone">
-                  <h5>Phone Number</h5>
+                  <h5>رقم الهاتف</h5>
                   <p>(123) 456 - 7890</p>
                 </div>
               </div>
             </Col>
             <Col md={3}>
-            <div className="footer-location-box ">
+              <div className="footer-location-box ">
                 <div className="box-header d-flex justify-content-center align-items-center">
-                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
                   <FontAwesomeIcon icon={faX} />
                 </div>
 
                 <div className="address">
-                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
-                  <Link href={"#"}>Find us on the map</Link>
+                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
+                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
                 </div>
 
                 <div className="phone">
-                  <h5>Phone Number</h5>
+                  <h5>رقم الهاتف</h5>
                   <p>(123) 456 - 7890</p>
                 </div>
               </div>
             </Col>
             <Col md={3}>
-            <div className="footer-location-box ">
+              <div className="footer-location-box ">
                 <div className="box-header d-flex justify-content-center align-items-center">
-                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
                   <FontAwesomeIcon icon={faX} />
                 </div>
 
                 <div className="address">
-                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
-                  <Link href={"#"}>Find us on the map</Link>
+                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
+                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
                 </div>
 
                 <div className="phone">
-                  <h5>Phone Number</h5>
+                  <h5>رقم الهاتف</h5>
                   <p>(123) 456 - 7890</p>
                 </div>
               </div>
             </Col>
             <Col md={3}>
-            <div className="footer-location-box ">
+              <div className="footer-location-box ">
                 <div className="box-header d-flex justify-content-center align-items-center">
-                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
                   <FontAwesomeIcon icon={faX} />
                 </div>
 
                 <div className="address">
-                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
-                  <Link href={"#"}>Find us on the map</Link>
+                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
+                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
                 </div>
 
                 <div className="phone">
-                  <h5>Phone Number</h5>
+                  <h5>رقم الهاتف</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>{" "}
+            <Col md={3}>
+              <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
+                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>رقم الهاتف</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>{" "}
+            <Col md={3}>
+              <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
+                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>رقم الهاتف</h5>
                   <p>(123) 456 - 7890</p>
                 </div>
               </div>
             </Col>
             <Col md={3}>
-            <div className="footer-location-box ">
+              <div className="footer-location-box ">
                 <div className="box-header d-flex justify-content-center align-items-center">
-                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
                   <FontAwesomeIcon icon={faX} />
                 </div>
 
                 <div className="address">
-                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
-                  <Link href={"#"}>Find us on the map</Link>
+                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
+                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
                 </div>
 
                 <div className="phone">
-                  <h5>Phone Number</h5>
+                  <h5>رقم الهاتف</h5>
                   <p>(123) 456 - 7890</p>
                 </div>
               </div>
             </Col>
             <Col md={3}>
-            <div className="footer-location-box ">
+              <div className="footer-location-box ">
                 <div className="box-header d-flex justify-content-center align-items-center">
-                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
                   <FontAwesomeIcon icon={faX} />
                 </div>
 
                 <div className="address">
-                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
-                  <Link href={"#"}>Find us on the map</Link>
+                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
+                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
                 </div>
 
                 <div className="phone">
-                  <h5>Phone Number</h5>
+                  <h5>رقم الهاتف</h5>
                   <p>(123) 456 - 7890</p>
                 </div>
               </div>
             </Col>
             <Col md={3}>
-            <div className="footer-location-box ">
+              <div className="footer-location-box ">
                 <div className="box-header d-flex justify-content-center align-items-center">
-                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
                   <FontAwesomeIcon icon={faX} />
                 </div>
 
                 <div className="address">
-                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
-                  <Link href={"#"}>Find us on the map</Link>
+                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
+                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
                 </div>
 
                 <div className="phone">
-                  <h5>Phone Number</h5>
+                  <h5>رقم الهاتف</h5>
                   <p>(123) 456 - 7890</p>
                 </div>
               </div>
             </Col>
             <Col md={3}>
-            <div className="footer-location-box ">
+              <div className="footer-location-box ">
                 <div className="box-header d-flex justify-content-center align-items-center">
-                  <h3 className="mb-3"> Location Specific Business Name </h3>
+                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
                   <FontAwesomeIcon icon={faX} />
                 </div>
 
                 <div className="address">
-                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
-                  <Link href={"#"}>Find us on the map</Link>
+                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
+                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
                 </div>
 
                 <div className="phone">
-                  <h5>Phone Number</h5>
-                  <p>(123) 456 - 7890</p>
-                </div>
-              </div>
-            </Col>
-            <Col md={3}>
-            <div className="footer-location-box ">
-                <div className="box-header d-flex justify-content-center align-items-center">
-                  <h3 className="mb-3"> Location Specific Business Name </h3>
-                  <FontAwesomeIcon icon={faX} />
-                </div>
-
-                <div className="address">
-                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
-                  <Link href={"#"}>Find us on the map</Link>
-                </div>
-
-                <div className="phone">
-                  <h5>Phone Number</h5>
-                  <p>(123) 456 - 7890</p>
-                </div>
-              </div>
-            </Col>
-            <Col md={3}>
-            <div className="footer-location-box ">
-                <div className="box-header d-flex justify-content-center align-items-center">
-                  <h3 className="mb-3"> Location Specific Business Name </h3>
-                  <FontAwesomeIcon icon={faX} />
-                </div>
-
-                <div className="address">
-                  <p>1234 Anywhere Place City Name Here, XX 123456 </p>
-                  <Link href={"#"}>Find us on the map</Link>
-                </div>
-
-                <div className="phone">
-                  <h5>Phone Number</h5>
+                  <h5>رقم الهاتف</h5>
                   <p>(123) 456 - 7890</p>
                 </div>
               </div>

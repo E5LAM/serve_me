@@ -1,12 +1,12 @@
 "use client";
-import Link from "next/link";
 import { Col } from "react-bootstrap";
+import Link from "next/link";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ColSpec } from "react-bootstrap/esm/Col";
 
-export default function Testimonials({ md }: { md: ColSpec | undefined }) {
+export default function Testimonials({ cols }: { cols?: number }) {
   const settings = {
     dots: false,
     infinite: true,
@@ -32,45 +32,45 @@ export default function Testimonials({ md }: { md: ColSpec | undefined }) {
   };
 
   return (
-    <Col md={md}>
-      <div className="testi-slider">
-        <h2 className="text-center mb-5 fw-bold">Client Testimonials</h2>
+    <Col md={cols}>
+      <div className="testi-slider text-end">
+        <h2 className="text-center mb-5 fw-bold">شهادات العملاء</h2>
         <Slider {...settings}>
           <div className="slider-item">
             <div className="slider-box-header">
-              <h4>John Doe</h4>
-              <p>CEO, Company</p>
+              <h4>جون دو</h4>
+              <p>الرئيس التنفيذي، الشركة</p>
             </div>
             <div className="slider-box-rate">⭐⭐⭐⭐⭐</div>
             <div className="slider-box-desc">
-              <p>Excellent service! Highly recommended for professional work</p>
+              <p>خدمة ممتازة! أوصي بها بشدة للعمل المهني.</p>
             </div>
           </div>
           <div className="slider-item">
             <div className="slider-box-header">
-              <h4>Jane Smith</h4>
-              <p>Manager, Business</p>
+              <h4>جين سميث</h4>
+              <p>مدير، الأعمال</p>
             </div>
             <div className="slider-box-rate">⭐⭐⭐⭐</div>
             <div className="slider-box-desc">
-              <p>Great experience, will definitely use again!</p>
+              <p>تجربة رائعة، سأستخدمها بالتأكيد مرة أخرى!</p>
             </div>
           </div>
           <div className="slider-item">
             <div className="slider-box-header">
-              <h4>Mike Taylor</h4>
-              <p>Freelancer</p>
+              <h4>مايك تايلور</h4>
+              <p>مستقل</p>
             </div>
             <div className="slider-box-rate">⭐⭐⭐⭐⭐</div>
             <div className="slider-box-desc">
-              <p>Very satisfied with the outcome!</p>
+              <p>ممتازة جدًا في النتيجة!</p>
             </div>
           </div>
         </Slider>
       </div>
       <div className="btn-out-serv text-center">
         <Link href={"#"} className="">
-          <button className="btn-prim mt-4">Our Reviews</button>
+          <button className="btn-prim mt-4">مراجعاتنا</button>
         </Link>
       </div>
     </Col>
