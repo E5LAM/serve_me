@@ -1,3 +1,4 @@
+import Testimonials from "@/components/testimonials/Testimonials";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -144,6 +145,12 @@ export default function Page() {
                 </ul>
               </Col>
             </Row>
+          </Container>
+        </section>
+
+        <section className="testimonials">
+          <Container>
+            <Testimonials cols={undefined} />
           </Container>
         </section>
       </Container>
