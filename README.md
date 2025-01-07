@@ -29,6 +29,10 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+- Figma design: [https://www.figma.com/design/9odprxnSaHaCmvyahpCalC/CWS-Local-SEO-Content-Map-(Copy)?node-id=3042-3440&t=WUBcA9CWbKG9eafp-1](<https://www.figma.com/design/9odprxnSaHaCmvyahpCalC/CWS-Local-SEO-Content-Map-(Copy)?node-id=3042-3440&t=WUBcA9CWbKG9eafp-1>)
+
+- inspiration: [https://www.fantasticservices.com/](https://www.fantasticservices.com/)
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
