@@ -9,12 +9,12 @@ export default function BrandTrustSection() {
         <Row className="align-items-center">
           <Col md={6}>
             <div className="testi-info text-center">
-              <p>Logo</p>
+              <p>اخدمني</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laborum, inventore ducimus sapiente possimus similique vero
-                porro at fuga dolorem corporis velit corrupti magni eum
-                molestias itaque voluptate unde minima voluptatem!
+                لوريم إيبسوم دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت.
+                لابوروم، إينفينتوري دوكيموس سابينتي بوسيموس سيميليكوي فيرو بورو
+                آت فوجا دولوريم كوربوريس فيليت كوروبتي ماغني إيم موليستياس
+                إيتاكوي وولوبات إندي مينما وولوباتيم!
               </p>
               <div className="testi-images d-flex justify-content-center align-items-center gap-5">
                 <Image
@@ -33,7 +33,7 @@ export default function BrandTrustSection() {
             </div>
           </Col>
 
-          <Testimonials md={6} />
+          <Testimonials cols={6} />
         </Row>
       </Container>
     </section>
