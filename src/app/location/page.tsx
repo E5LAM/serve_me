@@ -20,7 +20,7 @@ export default function LocationPage() {
 
       <section className="testimonials">
         <Container>
-          <Testimonials md={undefined} />
+          <Testimonials cols={undefined} />
         </Container>
       </section>
 
