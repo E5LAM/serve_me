@@ -16,7 +16,7 @@ export default function BrandTrustSection() {
                 آت فوجا دولوريم كوربوريس فيليت كوروبتي ماغني إيم موليستياس
                 إيتاكوي وولوبات إندي مينما وولوباتيم!
               </p>
-              <div className="testi-images d-flex justify-content-center align-items-center gap-5">
+              <div className="testi-images d-flex flex-wrap justify-content-center align-items-center gap-5">
                 <Image
                   src={"/images/testimonials/google.png"}
                   width={250}
