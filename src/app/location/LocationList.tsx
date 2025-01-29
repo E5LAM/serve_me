@@ -61,17 +61,10 @@ export const LocationList = ({ locations }: { locations: Location[] }) => {
 
         .location-card {
           margin-bottom: 1.5rem;
-          border-radius: 8px;
-          background-color: rgba(30, 59, 85, 0.1);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-          transition: all 0.3s ease-in-out;
         }
-
-        .vstack{margin-bottom: .6rem;}
-
-        .location-card:hover {
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05),
-            0 4px 8px rgba(0, 0, 0, 0.1);
+        .location-card.depth-0{
+          padding-bottom: 1rem;
+          border-bottom: 1px solid #1e3b55;
         }
 
         .parent-item {
