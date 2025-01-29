@@ -1,17 +1,28 @@
 import { Col, Container, Row } from "react-bootstrap";
 
-export default function AboutIntro() {
+export default async function AboutIntro() {
+  const res = await fetch(`${process.env.BASE_URL}/about`);
+  const aboutPageData = await res.json();
+
+  const description = aboutPageData.data.about[0].description;
+
   return (
     <Container className="about__intro mt-5">
       <Row className="align-items-center rounded-4 px-2 px-md-0 about__intro-bg shadow">
         <div className="col-md-5 d-none d-md-block">{cleaningSVG}</div>
 
         <Col xs={12} md={7} className="p-5 p-md-6">
-          <h1 id="mhPageTitle">عائلة أخدمنى</h1>
-          <p className="mt-3 mt-md-0">
-            كمشروع عائلى، نهتم ببعضنا البعض، موظفينا، وأنت. ثم كل شخص يعود إلى
-            المنزل، سعيدًا.
-          </p>
+          {description ? (
+            <span dangerouslySetInnerHTML={{ __html: description }} />
+          ) : (
+            <>
+              <h1 id="mhPageTitle">عائلة أخدمنى</h1>
+              <p className="mt-3 mt-md-0">
+                كمشروع عائلى، نهتم ببعضنا البعض، موظفينا، وأنت. ثم كل شخص يعود
+                إلى المنزل، سعيدًا.
+              </p>
+            </>
+          )}
         </Col>
       </Row>
     </Container>
