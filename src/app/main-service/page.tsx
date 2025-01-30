@@ -5,11 +5,10 @@ import ServiceOffered from "@/components/mainservice/service-offered";
 import ServiceWeOffer from "@/components/mainservice/service-we-offer";
 import SubServicesList from "@/components/mainservice/sub-services-list";
 
-
 export default function Page() {
   return (
     <>
-    <Main/>
+      <Main />
       <ServiceOffered />
       <ServiceWeOffer />
       <SubServicesList />
