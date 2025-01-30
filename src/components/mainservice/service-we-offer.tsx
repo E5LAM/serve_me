@@ -39,10 +39,10 @@ const ServiceWeOffer = () => {
               <Col md={6}>
                 <div className="hero-image text-center border rounded">
                   <Image
-                    // src={
-                    //   service.image ? service.image : "/images/service1.jpeg"
-                    // }
-                    src={"/images/service1.jpeg"}
+                    src={
+                      service.image ? service.image : "/images/service1.jpeg"
+                    }
+                    // src={"/images/service1.jpeg"}
                     width={360}
                     height={226}
                     alt="hero image"

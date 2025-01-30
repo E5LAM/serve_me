@@ -550,6 +550,14 @@ ul {
   color: #1E3B55; /* or any color you prefer */
 }
 
+@media (max-width: 700px) {
+  .privacy-body .container h3 {
+    font-size: 1.5rem;
+  }
+  .privacy-body .container p {
+    font-size: 1rem;
+  }
+}
 main.location .hero .hero-info h1,
 main.location .hero .hero-info h3 {
   color: #2254aa;
