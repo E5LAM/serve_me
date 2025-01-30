@@ -1,44 +1,30 @@
+"use client";
+import { AxiosInstance } from "@/Api/Api";
+import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 
 export default function Page() {
+  const [terms, setTerms] = useState("");
+
+  useEffect(() => {
+    const handleFetch = async () => {
+      try {
+        const response = await AxiosInstance.get("terms");
+        console.log(response.data.data.description);
+        setTerms(response.data.data.description);
+      } catch (error) {
+        console.error("Error fetching terms:", error);
+      }
+    };
+    handleFetch();
+  }, []);
   return (
     <section className="privacy-policy">
-    <div className="privacy-header text-center">
-      <h2 className="mb-5">الشروط والأحكام</h2>
-    </div>
-    <div className="privacy-body">
-        <Container>
-          <h3>قبول الشروط</h3>
-          <p>
-            باستخدامك هذا الموقع أو خدماتنا، فإنك توافق على الالتزام بجميع الشروط
-            والأحكام المنصوص عليها هنا. إذا كنت لا توافق على أي من هذه الشروط،
-            يُرجى عدم استخدام الموقع أو الخدمات.
-          </p>
-          <h3>التعديلات</h3>
-          <p>
-            نحتفظ بالحق في تعديل أو تحديث الشروط والأحكام في أي وقت دون إشعار
-            مسبق. يُرجى مراجعة هذه الصفحة بشكل دوري للتأكد من معرفتك بأحدث
-            التعديلات.
-          </p>
-          <h3>استخدام الموقع</h3>
-            <p>يُحظر استخدام الموقع لأي غرض غير قانوني أو غير مصرح به.</p>
-            <p>يجب الامتثال لجميع القوانين واللوائح السارية عند استخدام الموقع.</p>
-          <h3>الملكية الفكرية</h3>
-          <p>
-            جميع المحتويات الموجودة على هذا الموقع، بما في ذلك النصوص، الصور،
-            والشعارات، هي ملكية حصرية لنا أو للجهات المرخصة ولا يجوز نسخها أو
-            استخدامها دون إذن كتابي مسبق.
-          </p>
-          <h3>حدود المسؤولية</h3>
-          <p>
-            نحن غير مسؤولين عن أي أضرار مباشرة أو غير مباشرة تنشأ عن استخدام
-            الموقع أو الخدمات.
-          </p>
-          <h3>القانون الواجب التطبيق</h3>
-          <p>
-            تخضع هذه الشروط والأحكام وتفسر وفقًا للقوانين السارية في بلدك.
-          </p>
-        </Container>
+      <div className="privacy-header text-center">
+        <h2 className="mb-5">الشروط والأحكام</h2>
+      </div>
+      <div className="privacy-body">
+        <Container dangerouslySetInnerHTML={{ __html: terms }} />
       </div>
     </section>
   );

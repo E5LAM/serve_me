@@ -13,17 +13,16 @@ type Service = {
 const ServiceWeOffer = () => {
   const [services, setServices] = useState<Service[]>([]);
 
-  const handleFetch = async () => {
-    try {
-      const response = await AxiosInstance.get("services");
-      console.log(response.data.data);
-      setServices(response.data.data);
-    } catch (error) {
-      console.error("Error fetching services:", error);
-    }
-  };
-
   useEffect(() => {
+    const handleFetch = async () => {
+      try {
+        const response = await AxiosInstance.get("services");
+        console.log(response.data.data);
+        setServices(response.data.data);
+      } catch (error) {
+        console.error("Error fetching services:", error);
+      }
+    };
     handleFetch();
   }, []);
 
