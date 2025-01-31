@@ -1,6 +1,15 @@
-import { Col, Container, Row } from "react-bootstrap";
-import Testimonials from "@/components/testimonials/Testimonials";
+import dynamic from "next/dynamic";
 import { Metadata } from "next";
+
+import { Col, Container, Row } from "react-bootstrap";
+import Loading from "@/components/ui/Loader";
+
+const Testimonials = dynamic(
+  () => import("@/components/testimonials/Testimonials"),
+  {
+    loading: () => <Loading />,
+  }
+);
 import { LocationList } from "./LocationList";
 
 export const metadata: Metadata = {
