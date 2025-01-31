@@ -1,5 +1,4 @@
 import { Container } from "react-bootstrap";
-import Loading from "../ui/Loader";
 import QuestionsAccordion from "./QuestionsAccordion";
 
 export default async function Asked() {
@@ -10,7 +9,11 @@ export default async function Asked() {
     <section className="asked">
       <Container>
         <h2 className="text-center my-5">الأسئلة المتكررة حول خدمات التنظيف</h2>
-        {data?.data ? <QuestionsAccordion items={data.data} /> : <Loading />}
+        {data?.data ? (
+          <QuestionsAccordion items={data.data} />
+        ) : (
+          <p>غير متوفر أسئلة حاليا...</p>
+        )}
       </Container>
     </section>
   );
