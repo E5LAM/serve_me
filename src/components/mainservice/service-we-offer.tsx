@@ -1,8 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
-import { AxiosInstance } from "@/Api/Api";
 
 type Service = {
   id: number;
@@ -10,27 +8,16 @@ type Service = {
   description: string;
   image: string;
 };
-const ServiceWeOffer = () => {
-  const [services, setServices] = useState<Service[]>([]);
+type ServiceWeOfferProps = {
+  services: Service[];
+};
 
-  useEffect(() => {
-    const handleFetch = async () => {
-      try {
-        const response = await AxiosInstance.get("services");
-        console.log(response.data.data);
-        setServices(response.data.data);
-      } catch (error) {
-        console.error("Error fetching services:", error);
-      }
-    };
-    handleFetch();
-  }, []);
-
+const ServiceWeOffer: React.FC<ServiceWeOfferProps> = ({ services }) => {
   return (
     <section className="hero">
       <Container>
         <div className="mainservText">
-          {services.map((service, index) => (
+          {services.map((service: Service, index: number) => (
             <Row
               key={service.id}
               className={(index + 1) % 2 === 0 ? "reverse" : ""}

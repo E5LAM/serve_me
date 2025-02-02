@@ -1,31 +1,32 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
 
-const Main = () => {
+type First = {
+  firstSection: {
+    title: string;
+    description: string;
+    image: string;
+  };
+};
+const Main: React.FC<First> = ({ firstSection }) => {
   return (
     <section className="hero">
       <Container>
         <Row>
           <Col md={6}>
             <div className="hero-info">
-              <h1 className="">(الخدمة المقدمة)</h1>
-              <p>
-                لوريم إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت.
-                موليتيا، كوربوريس دولوريم تيمبورا أديبسي ريبودياندي ريهريبريت آت
-                إلوم لابوريوسام ألياس موليستي؟ أولام ديسيرنت إكس توتام ريكوساند؟
-                لوريم إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت.
-                موليتيا، كوربوريس دولوريم تيمبورا أديبسي ريبودياندي ريهريبريت آت
-                إلوم لابوريوسام ألياس موليستي؟ أولام ديسيرنت إكس توتام ريكوساند؟
-                لوريم إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت.
-                موليتيا، كوربوريس دولوريم تيمبورا أديبسي ريبودياندي ريهريبريت آت
-                إلوم لابوريوسام ألياس موليستي؟ أولام ديسيرنت إكس توتام ريكوساند؟
-              </p>
+              <h1 className="">{firstSection?.title}</h1>
+              <p>{firstSection?.description}</p>
             </div>
           </Col>
           <Col md={6}>
             <div className="hero-image text-center border rounded">
               <Image
-                src={"/images/service1.jpeg"}
+                src={
+                  firstSection?.image
+                    ? firstSection.image
+                    : "/images/service1.jpeg"
+                }
                 width={360}
                 height={226}
                 alt=" hero image"
