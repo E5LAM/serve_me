@@ -1,10 +1,10 @@
 "use client";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import Link from "next/link";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image from "next/image";
+
 
 export default function Testimonials({ cols }: { cols?: number }) {
   const settings = {

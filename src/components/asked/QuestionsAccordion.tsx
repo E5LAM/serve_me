@@ -1,13 +1,19 @@
 "use client";
-import Accordion from "react-bootstrap/Accordion";
+import { Accordion } from "react-bootstrap";
 
-export default function QuestionsAccordion({ items }: { items: any }) {
+type FAQ = {
+  id: number;
+  question: string;
+  answer: string;
+};
+
+export default function QuestionsAccordion({ items }: { items: FAQ[] }) {
   console.log(items);
 
   return (
     <Accordion>
-      {items.map((item: any) => (
-        <Accordion.Item eventKey={item.question} key={item.question}>
+      {items.map((item) => (
+        <Accordion.Item eventKey={String(item.id)} key={item.id}>
           <Accordion.Header>{item.question}</Accordion.Header>
           <Accordion.Body>{item.answer}</Accordion.Body>
         </Accordion.Item>
