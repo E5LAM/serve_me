@@ -1,29 +1,28 @@
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faX } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 import Link from "next/link";
 import { Col, Container, Row } from "react-bootstrap";
 
-export default function Footer() {
+export default function Footer({ footerData, footebox }: any) {
   return (
     <section className="footer">
       <Container>
         <Row>
-          <Col md={4}>
+          <Col>
             <div className="footer-info text-capitalize footer-contact-information">
-              <h2 className="footer-logo">اخدمني</h2>
-              <h3>اسم الشركة (هنا)</h3>
-              <p>
-                لوريم إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت.
-                موليتيا، كوربوريس دولوريم تيمبورا أديبسي ريبودياندي ريبريهاندرات
-                آت إلوم لوريم إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ
-                إيليت. موليتيا، كوربوريس دولوريم تيمبورا أديبسي ريبودياندي
-                ريبريهاندرات آت إلوم
-              </p>
+              <h2 className="footer-logo">{footerData?.header ?? "اخدمني"}</h2>
+              <p>{footerData?.description}</p>
+
+              {footerData?.image && (
+                <Image
+                  width={50}
+                  height={50}
+                  src={`/${footerData.image}`}
+                  alt={`صورة ${footerData.header}`}
+                />
+              )}
             </div>
           </Col>
-          <Col md={4}>
+          {/* <Col md={4}>
             <div className="footer-area-we-serve">
               <h3>المناطق التي نخدمها</h3>
               <ul>
@@ -162,10 +161,135 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-          </Col>
+          </Col> */}
         </Row>
         <div className="footer-location">
           <Row>
+            {footebox?.map((box: any) => (
+              <Col md={3} key={box.name + box.id}>
+                <div className="footer-location-box ">
+                  <div className="box-header d-flex justify-content-between align-items-center">
+                    <h3
+                      style={{
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                        whiteSpace: "nowrap",
+                        width: "70%",
+                      }}
+                    >
+                      {box.name}
+                    </h3>
+                    <Image
+                      width={80}
+                      height={50}
+                      src={box.image}
+                      alt={box.name}
+                      className="object-fit-contain"
+                    />
+                  </div>
+
+                  <div className="address">
+                    <p>{box.description}</p>
+                    <Link href={box.link}>ابحث عنا على الخريطة</Link>
+                  </div>
+
+                  <div className="phone mt-3">
+                    <h5>رقم الهاتف:</h5>
+                    <p>{box.phone}</p>
+                  </div>
+                </div>
+              </Col>
+            ))}
+            {/* <Col md={3}>
+              <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
+                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>رقم الهاتف</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
+                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>رقم الهاتف</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
+                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>رقم الهاتف</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
+                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>رقم الهاتف</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="footer-location-box ">
+                <div className="box-header d-flex justify-content-center align-items-center">
+                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
+                  <FontAwesomeIcon icon={faX} />
+                </div>
+
+                <div className="address">
+                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
+                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
+                </div>
+
+                <div className="phone">
+                  <h5>رقم الهاتف</h5>
+                  <p>(123) 456 - 7890</p>
+                </div>
+              </div>
+            </Col>
             <Col md={3}>
               <div className="footer-location-box ">
                 <div className="box-header d-flex justify-content-center align-items-center">
@@ -273,115 +397,7 @@ export default function Footer() {
                   <p>(123) 456 - 7890</p>
                 </div>
               </div>
-            </Col>{" "}
-            <Col md={3}>
-              <div className="footer-location-box ">
-                <div className="box-header d-flex justify-content-center align-items-center">
-                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
-                  <FontAwesomeIcon icon={faX} />
-                </div>
-
-                <div className="address">
-                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
-                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
-                </div>
-
-                <div className="phone">
-                  <h5>رقم الهاتف</h5>
-                  <p>(123) 456 - 7890</p>
-                </div>
-              </div>
-            </Col>{" "}
-            <Col md={3}>
-              <div className="footer-location-box ">
-                <div className="box-header d-flex justify-content-center align-items-center">
-                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
-                  <FontAwesomeIcon icon={faX} />
-                </div>
-
-                <div className="address">
-                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
-                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
-                </div>
-
-                <div className="phone">
-                  <h5>رقم الهاتف</h5>
-                  <p>(123) 456 - 7890</p>
-                </div>
-              </div>
-            </Col>
-            <Col md={3}>
-              <div className="footer-location-box ">
-                <div className="box-header d-flex justify-content-center align-items-center">
-                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
-                  <FontAwesomeIcon icon={faX} />
-                </div>
-
-                <div className="address">
-                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
-                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
-                </div>
-
-                <div className="phone">
-                  <h5>رقم الهاتف</h5>
-                  <p>(123) 456 - 7890</p>
-                </div>
-              </div>
-            </Col>
-            <Col md={3}>
-              <div className="footer-location-box ">
-                <div className="box-header d-flex justify-content-center align-items-center">
-                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
-                  <FontAwesomeIcon icon={faX} />
-                </div>
-
-                <div className="address">
-                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
-                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
-                </div>
-
-                <div className="phone">
-                  <h5>رقم الهاتف</h5>
-                  <p>(123) 456 - 7890</p>
-                </div>
-              </div>
-            </Col>
-            <Col md={3}>
-              <div className="footer-location-box ">
-                <div className="box-header d-flex justify-content-center align-items-center">
-                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
-                  <FontAwesomeIcon icon={faX} />
-                </div>
-
-                <div className="address">
-                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
-                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
-                </div>
-
-                <div className="phone">
-                  <h5>رقم الهاتف</h5>
-                  <p>(123) 456 - 7890</p>
-                </div>
-              </div>
-            </Col>
-            <Col md={3}>
-              <div className="footer-location-box ">
-                <div className="box-header d-flex justify-content-center align-items-center">
-                  <h3 className="mb-3">اسم النشاط التجاري المحدد بالموقع</h3>
-                  <FontAwesomeIcon icon={faX} />
-                </div>
-
-                <div className="address">
-                  <p>1234 أي مكان هنا، اسم المدينة، XX 123456</p>
-                  <Link href={"#"}>ابحث عنا على الخريطة</Link>
-                </div>
-
-                <div className="phone">
-                  <h5>رقم الهاتف</h5>
-                  <p>(123) 456 - 7890</p>
-                </div>
-              </div>
-            </Col>
+            </Col> */}
           </Row>
         </div>
       </Container>

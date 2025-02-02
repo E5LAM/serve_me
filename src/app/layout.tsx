@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/globals.css";
 import { ThemeProvider } from "react-bootstrap";
 import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -21,11 +20,8 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl">
       <body>
-        <ThemeProvider dir="rtl">
-          <Header />
-          {children}
-          <Footer />
-        </ThemeProvider>
+        <Header />
+        <ThemeProvider dir="rtl">{children}</ThemeProvider>
       </body>
     </html>
   );
