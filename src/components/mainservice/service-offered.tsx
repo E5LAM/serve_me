@@ -1,17 +1,22 @@
 import { Container } from "react-bootstrap";
-type Second = {
-  serviceSecound: any;
+
+type Secound = {
+  servicesecound: {
+    title: string;
+    description: string;
+    image: string;
+  };
 };
 
-const ServiceOffered: React.FC<Second> = ({ serviceSecound }) => {
+const ServiceOffered: React.FC<Secound> = ({ servicesecound }) => {
   return (
     <section className="service-offered py-5">
       <Container>
         <div>
           <h2 className="service-title mb-4 fw-bold">
-            {serviceSecound?.title}{" "}
+            {servicesecound?.title}{" "}
           </h2>
-          <p className="service-description">{serviceSecound?.description}</p>
+          <p className="service-description">{servicesecound?.description}</p>
         </div>
       </Container>
     </section>

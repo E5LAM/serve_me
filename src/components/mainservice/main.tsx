@@ -2,9 +2,12 @@ import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
 
 type First = {
-  firstSection : any
+  firstSection: {
+    title: string;
+    description: string;
+    image: string;
+  };
 };
-
 const Main: React.FC<First> = ({ firstSection }) => {
   return (
     <section className="hero">
