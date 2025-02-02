@@ -1,9 +1,8 @@
 "use client";
 import Link from "next/link";
 import { ListGroup, Stack } from "react-bootstrap";
-import { Location } from "./page";
 
-export const LocationList = ({ locations }: { locations: Location[] }) => {
+export const LocationList = ({ locations }: { locations?: any[] }) => {
   const renderLocation = (
     location: Location | string,
     parentPath = "",
@@ -52,7 +51,38 @@ export const LocationList = ({ locations }: { locations: Location[] }) => {
 
   return (
     <ListGroup className="location-container">
-      {locations.map((location: Location) => renderLocation(location, "", 0))}
+      {locations?.map((loc: any) => (
+        <div key={loc.name} className={`location-card`}>
+          <ListGroup.Item key={loc.name} className={`location-item child-item`}>
+            <Link
+              href={`/${loc.name}`}
+              className="text-decoration-none text-dark location-link d-block w-100"
+            >
+              {loc.name}
+            </Link>
+          </ListGroup.Item>
+
+          {loc.towns.length > 0 && (
+            <ListGroup className="nested-list depth-1">
+              {loc.towns.map((town: any) => (
+                <Stack key={town.name}>
+                  <ListGroup.Item
+                    key={town.name}
+                    className={`location-item child-item`}
+                  >
+                    <Link
+                      href={`/${town.name}`}
+                      className="text-decoration-none text-dark location-link d-block w-100"
+                    >
+                      {town.name}
+                    </Link>
+                  </ListGroup.Item>
+                </Stack>
+              ))}
+            </ListGroup>
+          )}
+        </div>
+      ))}
 
       <style>{`
         .location-container {

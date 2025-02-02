@@ -11,43 +11,56 @@ const Testimonials = dynamic(
   }
 );
 import { LocationList } from "./LocationList";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "أخدمنى | الموقع",
   description: "موقع اخدمنى لخدمات التنظيف",
 };
 
-export interface Location {
-  [key: string]: (string | Location)[];
-}
+export default async function LocationPage() {
+  const res = await fetch(`${process.env.BASE_URL}/new/location`);
+  const locationPageData = await res.json();
 
-const locations: Location[] = [
-  {
-    القاهرة: [{ الجيزة: ["الهرم", "المنيرة"] }, "فيصل", { مقطم: ["شارع 9"] }],
-    الاسكندرية: ["سموحة", { "كفر عبده": ["ش 90"] }],
-  },
-];
+  const firstsection = locationPageData?.data?.firstsection;
+  const locations = locationPageData?.data?.locations;
+  const testmonils = locationPageData?.data?.reviews;
+  const footer = locationPageData?.data?.footer;
+  const footebox = locationPageData?.data?.footerSquare;
 
-export default function LocationPage() {
   return (
-    <main className="location mt-4">
-      <Container>
-        <Row>
-          <Col className="mb-md-0 mb-4">
-            <div className="hero-info">
-              <h1>مواقع خدمتنا</h1>
-              <p>سنقوم بالوصول إليك اينما كنت فى الاماكن التالية:</p>
-              <LocationList locations={locations} />
-            </div>
-          </Col>
-        </Row>
+    <>
+      <main className="location mt-4">
+        <Container>
+          <Row>
+            <Col className="mb-md-0 mb-4">
+              <div className="hero-info">
+                <div className="d-flex align-items-center justify-content-between">
+                  <div>
+                    <h1>{firstsection.title}</h1>
+                    <p>{firstsection.description}</p>
+                  </div>
+                  {firstsection.image && (
+                    <img src={firstsection.image} alt="hero image" />
+                  )}
+                </div>
+                {locations ? (
+                  <LocationList locations={locations} />
+                ) : (
+                  <h6 className="text-center">لا يتوفر أماكن خدمات حاليا!!</h6>
+                )}
+              </div>
+            </Col>
+          </Row>
 
-        <section className="testimonials">
-          <Container>
-            <Testimonials cols={undefined} />
-          </Container>
-        </section>
-      </Container>
-    </main>
+          <section className="testimonials">
+            <Container>
+              <Testimonials data={testmonils} cols={undefined} />
+            </Container>
+          </section>
+        </Container>
+      </main>
+      <Footer footerData={footer} footebox={footebox} />
+    </>
   );
 }
