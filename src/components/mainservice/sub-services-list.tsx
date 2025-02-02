@@ -1,55 +1,29 @@
-import { faKorvue } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
+/* eslint-disable @next/next/no-img-element */
 import { Container } from "react-bootstrap";
 
-const SubServicesList = () => {
+type SubService = {
+  id: number;
+  name: string;
+  description: string;
+  image: string;
+};
+type SubServiceWeOfferProps = {
+  subServices: SubService[];
+};
+
+const SubServicesList: React.FC<SubServiceWeOfferProps> = ({ subServices }) => {
   return (
     <section className="service-offered py-5">
       <Container>
-        <div >
-          <h2 className="service-title mb-4 fw-bold" > الخدمات الفرعية</h2>
+        <div>
+          <h2 className="service-title mb-4 fw-bold"> الخدمات الفرعية</h2>
           <div className="SubServicesList">
-            <Link href={'##'}>
-            <FontAwesomeIcon icon={faKorvue} style={{ width: "30px" }}/>
-            اسم الخدمة
-            </Link>
-            <Link href={'##'}>
-            <FontAwesomeIcon icon={faKorvue} style={{ width: "30px" }}/>
-            اسم الخدمة
-            </Link>
-            <Link href={'##'}>
-            <FontAwesomeIcon icon={faKorvue} style={{ width: "30px" }}/>
-            اسم الخدمة
-            </Link>
-            <Link href={'##'}>
-            <FontAwesomeIcon icon={faKorvue} style={{ width: "30px" }}/>
-            اسم الخدمة
-            </Link>
-            <Link href={'##'}>
-            <FontAwesomeIcon icon={faKorvue} style={{ width: "30px" }}/>
-            اسم الخدمة
-            </Link>
-            <Link href={'##'}>
-            <FontAwesomeIcon icon={faKorvue} style={{ width: "30px" }}/>
-            اسم الخدمة
-            </Link>
-            <Link href={'##'}>
-            <FontAwesomeIcon icon={faKorvue} style={{ width: "30px" }}/>
-            اسم الخدمة
-            </Link>
-            <Link href={'##'}>
-            <FontAwesomeIcon icon={faKorvue} style={{ width: "30px" }}/>
-            اسم الخدمة
-            </Link>
-            <Link href={'##'}>
-            <FontAwesomeIcon icon={faKorvue} style={{ width: "30px" }}/>
-            اسم الخدمة
-            </Link>
-            <Link href={'##'}>
-            <FontAwesomeIcon icon={faKorvue} style={{ width: "30px" }}/>
-            اسم الخدمة
-            </Link>
+            {subServices.map((e: SubService) => (
+              <button key={e.id}>
+                <img src={e.image} alt="" />
+                {e.name}
+              </button>
+            ))}
           </div>
         </div>
       </Container>

@@ -1,25 +1,17 @@
 import { Container } from "react-bootstrap";
+type Second = {
+  serviceSecound: any;
+};
 
-const ServiceOffered = () => {
+const ServiceOffered: React.FC<Second> = ({ serviceSecound }) => {
   return (
     <section className="service-offered py-5">
       <Container>
-        <div >
-          <h2 className="service-title mb-4 fw-bold">خدمات نقدمها</h2>
-          <p className="service-description">
-            لوريم إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت. موليتيا،
-            كوربوريس دولوريم تيمبورا أديبسي ريبودياندي ريهريبريت آت إلوم
-            لابوريوسام ألياس موليستي؟ أولام ديسيرنت إكس توتام ريكوساند؟ لوريم
-            إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت. موليتيا،
-            كوربوريس دولوريم تيمبورا أديبسي ريبودياندي ريهريبريت آت إلوم
-            لابوريوسام ألياس موليستي؟ أولام ديسيرنت إكس توتام ريكوساند؟ لوريم
-            إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت. موليتيا،
-            كوربوريس دولوريم تيمبورا أديبسي ريبودياندي ريهريبريت آت إلوم
-            لابوريوسام ألياس موليستي؟ أولام ديسيرنت إكس توتام ريكوساند؟ لوريم
-            إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت. موليتيا،
-            كوربوريس دولوريم تيمبورا أديبسي ريبودياندي ريهريبريت آت إلوم
-            لابوريوسام ألياس موليستي؟ أولام ديسيرنت إكس توتام ريكوساند؟
-          </p>
+        <div>
+          <h2 className="service-title mb-4 fw-bold">
+            {serviceSecound?.title}{" "}
+          </h2>
+          <p className="service-description">{serviceSecound?.description}</p>
         </div>
       </Container>
     </section>

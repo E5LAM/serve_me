@@ -484,7 +484,10 @@ ul {
   gap: 20px;
   flex-wrap: wrap;
 }
-.SubServicesList a {
+.SubServicesList a,
+.SubServicesList button {
+  border: none;
+  outline: none;
   color: #1e3b55;
   width: calc(50% - 10px);
   padding: 10px 20px;
@@ -495,12 +498,20 @@ ul {
   gap: 10px;
   border-radius: 7px;
 }
+.SubServicesList a img,
+.SubServicesList button img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
 @media (max-width: 800px) {
   .SubServicesList {
     flex-direction: column;
   }
-  .SubServicesList a {
+  .SubServicesList a,
+  .SubServicesList button {
     width: 100%;
   }
 }
