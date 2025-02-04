@@ -1,59 +1,38 @@
-"use client";
-import { AxiosInstance } from "@/Api/Api";
 import Asked from "@/components/asked/Asked";
 import ContactUs from "@/components/contact-us/ContactUs";
 import Main from "@/components/mainservice/main";
 import ServiceOffered from "@/components/mainservice/service-offered";
 import ServiceWeOffer from "@/components/mainservice/service-we-offer";
 import SubServicesList from "@/components/mainservice/sub-services-list";
-import { useEffect, useState } from "react";
 
-type Service = {
-  id: number;
-  name: string;
-  description: string;
-  image: string;
-};
-type SubService = {
-  id: number;
-  name: string;
-  description: string;
-  image: string;
-};
+async function getServicesData() {
+  try {
+    const res = await fetch(`${process.env.BASE_URL}/services`);
 
-type First = {
-  title: string;
-  description: string;
-  image: string;
-};
-type Secound = {
-  title: string;
-  description: string;
-  image: string;
-};
+    if (!res.ok) throw new Error("Failed to fetch services data");
 
-function MainServices() {
-  const [services, setServices] = useState<Service[]>([]);
-  const [firstSection, setFirstSection] = useState<First | null>(null);
-  const [servicesecound, setServiceSecound] = useState<Secound | null>(null);
-  const [subServices, setSubServices] = useState<SubService[]>([]);
+    const data = await res.json();
 
-  useEffect(() => {
-    const handleFetch = async () => {
-      try {
-        const response = await AxiosInstance.get("services");
-
-        // Ensure the structure matches the expected types
-        setFirstSection(response.data.data.firstSection || null);
-        setServiceSecound(response.data.data.servicesecound || null);
-        setServices(response.data.data.services || []);
-        setSubServices(response.data.data.subservices || []);
-      } catch (error) {
-        console.error("Error fetching services:", error);
-      }
+    return {
+      firstSection: data.data.firstSection || null,
+      servicesecound: data.data.servicesecound || null,
+      services: data.data.services || [],
+      subServices: data.data.subservices || [],
     };
-    handleFetch();
-  }, []);
+  } catch (error) {
+    console.error("Error fetching services:", error);
+    return {
+      firstSection: null,
+      servicesecound: null,
+      services: [],
+      subServices: [],
+    };
+  }
+}
+
+export default async function MainServices() {
+  const { firstSection, servicesecound, services, subServices } =
+    await getServicesData();
 
   return (
     <>
@@ -66,5 +45,3 @@ function MainServices() {
     </>
   );
 }
-
-export default MainServices;
