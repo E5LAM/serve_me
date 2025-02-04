@@ -1,5 +1,6 @@
 import Asked from "@/components/asked/Asked";
 import ContactUs from "@/components/contact-us/ContactUs";
+import Footer from "@/components/layout/Footer";
 import Main from "@/components/mainservice/main";
 import ServiceOffered from "@/components/mainservice/service-offered";
 import ServiceWeOffer from "@/components/mainservice/service-we-offer";
@@ -18,6 +19,8 @@ async function getServicesData() {
       servicesecound: data.data.servicesecound || null,
       services: data.data.services || [],
       subServices: data.data.subservices || [],
+      footer: data.data.footer || null,
+      footersquares: data.data.footersquares || [],
     };
   } catch (error) {
     console.error("Error fetching services:", error);
@@ -26,13 +29,21 @@ async function getServicesData() {
       servicesecound: null,
       services: [],
       subServices: [],
+      footer: null,
+      footersquares: [],
     };
   }
 }
 
 export default async function MainServices() {
-  const { firstSection, servicesecound, services, subServices } =
-    await getServicesData();
+  const {
+    firstSection,
+    servicesecound,
+    services,
+    subServices,
+    footer,
+    footersquares,
+  } = await getServicesData();
 
   return (
     <>
@@ -42,6 +53,7 @@ export default async function MainServices() {
       <SubServicesList subServices={subServices} />
       <Asked />
       <ContactUs />
+      {footer && <Footer footerData={footer} footebox={footersquares} />}
     </>
   );
 }
