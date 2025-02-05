@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "bf8052ba-fe24-492b-a39e-7b6606f99387",
+		"name": "serviceme",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29367343"
+	},
+	"item": [
+		{
+			"name": "blog page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/blogs"
+			},
+			"response": []
+		},
+		{
+			"name": "terms page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/terms"
+			},
+			"response": []
+		},
+		{
+			"name": "about page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/about"
+			},
+			"response": []
+		},
+		{
+			"name": "locations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/location"
+			},
+			"response": []
+		},
+		{
+			"name": "services page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/services"
+			},
+			"response": []
+		},
+		{
+			"name": "sub-service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/sub-services/1"
+			},
+			"response": []
+		},
+		{
+			"name": "service-posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/service-posts/2"
+			},
+			"response": []
+		},
+		{
+			"name": "faqs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/faqs"
+			},
+			"response": []
+		},
+		{
+			"name": "home-posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/home-posts"
+			},
+			"response": []
+		},
+		{
+			"name": "contacts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "wwdddddddd",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "www@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0255677899",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "fvfgggggghgfds",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{url}}/contacts"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://programming-fashion.store/api",
+			"type": "string"
+		}
+	]
+}
