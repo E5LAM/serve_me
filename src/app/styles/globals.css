@@ -561,8 +561,22 @@ ul {
   color: #1E3B55; /* or any color you prefer */
 }
 
+.privacy-body .container h1,
+.privacy-body .container h2,
+.privacy-body .container h3,
+.privacy-body .container h4 {
+  font-size: 2rem;
+  color: #2254aa;
+}
+.privacy-body .container p {
+  font-size: 1.2rem;
+}
+
 @media (max-width: 700px) {
-  .privacy-body .container h3 {
+  .privacy-body .container h1,
+  .privacy-body .container h2,
+  .privacy-body .container h3,
+  .privacy-body .container h4 {
     font-size: 1.5rem;
   }
   .privacy-body .container p {
