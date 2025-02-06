@@ -28,8 +28,6 @@ interface BlogData {
   data: {
     blogheader: BlogHeader;
     blogs: Blog[];
-    footer: any;
-    footerBox: any[];
   };
 }
 
