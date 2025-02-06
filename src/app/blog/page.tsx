@@ -1,92 +1,78 @@
+"use client";
 import Testimonials from "@/components/testimonials/Testimonials";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
+interface Blog {
+  id: number;
+  title: string | null;
+  description: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+interface BlogHeader {
+  id: number;
+  title: string;
+  image: string;
+  created_at: string;
+  updated_at: string;
+}
+
+interface BlogData {
+  success: boolean;
+  message: string;
+  data: {
+    blogheader: BlogHeader;
+    blogs: Blog[];
+    footer: any;
+    footerBox: any[];
+  };
+}
+
 export default function Page() {
+  const [data, setData] = useState<BlogData | null>(null);
+
+  useEffect(() => {
+    async function getBlog(): Promise<void> {
+      try {
+        const res = await fetch("https://programming-fashion.store/api/blogs");
+        if (!res.ok) {
+          throw new Error("حدث خطأ أثناء جلب البيانات");
+        }
+        const result: BlogData = await res.json();
+        setData(result);
+      } catch (err) {
+        console.error(err);
+      }
+    }
+    getBlog();
+  }, []);
+
   return (
     <section className="blog">
       <div className="blog-header">
-        <h1>صفحه البلوج </h1>
+        {data?.data?.blogheader && (
+          <div key={data.data.blogheader.id}>
+            <h2>{data.data.blogheader.title || "عنوان الصفحة"}</h2>
+          </div>
+        )}
       </div>
       <Container>
         <div className="blog-body">
-          <h2>خبيرنا (الخدمة) يساعد (الموقع) المقيمين</h2>
-          <p>
-            لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي
-            الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم
-            إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت
-            مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن
-            كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من الزمن لم
-            تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة
-            والتنضيد الإلكتروني. انتشر بشكل كبير في ستينيّات هذا القرن مع إصدار
-            إيبسوم.
-          </p>
-
-          <h2>خبيرنا (الخدمة) يساعد (الموقع) المقيمين</h2>
-          <p>
-            لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي
-            الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم
-            إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت
-            مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن
-            كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من الزمن لم
-            تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة
-            والتنضيد الإلكتروني. انتشر بشكل كبير في ستينيّات هذا القرن مع إصدار
-            إيبسوم.
-          </p>
-          <p>
-            لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي
-            الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم
-            إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت
-            مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن
-            كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من الزمن لم
-            تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة
-            والتنضيد الإلكتروني. انتشر بشكل كبير في ستينيّات هذا القرن مع إصدار
-            إيبسوم.
-          </p>
-          <p>
-            لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي
-            الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم
-            إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت
-            مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن
-            كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من الزمن لم
-            تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة
-            والتنضيد الإلكتروني. انتشر بشكل كبير في ستينيّات هذا القرن مع إصدار
-            إيبسوم.
-          </p>
-
-          <h2>خبيرنا (الخدمة) يساعد (الموقع) المقيمين</h2>
-          <p>
-            لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي
-            الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم
-            إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت
-            مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن
-            كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من الزمن لم
-            تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة
-            والتنضيد الإلكتروني. انتشر بشكل كبير في ستينيّات هذا القرن مع إصدار
-            إيبسوم.
-          </p>
-          <p>
-            لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي
-            الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم
-            إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت
-            مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن
-            كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من الزمن لم
-            تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة
-            والتنضيد الإلكتروني. انتشر بشكل كبير في ستينيّات هذا القرن مع إصدار
-            إيبسوم.
-          </p>
-          <p>
-            لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي
-            الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم
-            إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت
-            مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن
-            كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من الزمن لم
-            تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة
-            والتنضيد الإلكتروني. انتشر بشكل كبير في ستينيّات هذا القرن مع إصدار
-            إيبسوم.
-          </p>
+          {data?.data?.blogs?.map((blog) => (
+            <div key={blog.id}>
+              <h2>{blog.title || "عنوان المقالة"}</h2>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: blog.description || "وصف المقالة",
+                }}
+              />
+            </div>
+          ))}
         </div>
 
         <section className="map">
@@ -100,14 +86,7 @@ export default function Page() {
                         className="gmap_iframe"
                         src="https://maps.google.com/maps?width=600&height=400&hl=en&q=University of Oxford&t=&z=14&ie=UTF8&iwloc=B&output=embed"
                       />
-                      <a href="https://sprunkin.com/">Sprunki Incredibox</a>
                     </div>
-                    <style
-                      dangerouslySetInnerHTML={{
-                        __html:
-                          ".mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}",
-                      }}
-                    />
                   </div>
                 </div>
               </Col>
@@ -124,24 +103,14 @@ export default function Page() {
                 </div>
 
                 <ul className="list-unstyled d-flex align-items-center gap-3 text-md-end text-center mt-3">
-                  <li>
-                    <FontAwesomeIcon
-                      icon={faLinkedin}
-                      style={{ width: "30px", color: "#0a66c2" }}
-                    />
-                  </li>
-                  <li>
-                    <FontAwesomeIcon
-                      icon={faLinkedin}
-                      style={{ width: "30px", color: "#0a66c2" }}
-                    />
-                  </li>
-                  <li>
-                    <FontAwesomeIcon
-                      icon={faLinkedin}
-                      style={{ width: "30px", color: "#0a66c2" }}
-                    />
-                  </li>
+                  {[...Array(3)].map((_, index) => (
+                    <li key={index}>
+                      <FontAwesomeIcon
+                        icon={faLinkedin}
+                        style={{ width: "30px", color: "#0a66c2" }}
+                      />
+                    </li>
+                  ))}
                 </ul>
               </Col>
             </Row>
