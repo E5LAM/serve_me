@@ -190,7 +190,7 @@ export default function Footer({ footerData, footebox }: any) {
 
                   <div className="address">
                     <p>{box.description}</p>
-                    <Link href={box.link}>ابحث عنا على الخريطة</Link>
+                    <Link href={box.link} target="_blank">ابحث عنا على الخريطة</Link>
                   </div>
 
                   <div className="phone mt-3">
