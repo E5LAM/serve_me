@@ -16,7 +16,7 @@ export default function Footer({ footerData, footebox }: any) {
                 <Image
                   width={50}
                   height={50}
-                  src={`/${footerData.image}`}
+                  src={`${footerData.image}`}
                   alt={`صورة ${footerData.header}`}
                 />
               )}
