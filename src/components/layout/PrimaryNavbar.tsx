@@ -1,9 +1,12 @@
 "use client";
+import { faWordpress } from "@fortawesome/free-brands-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import { Row, Col } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 export default function PrimaryNavbar() {
   return (
@@ -29,22 +32,146 @@ export default function PrimaryNavbar() {
                 <li>
                   <Link href={"/contact"}>اتصل بنا</Link>
                 </li>
-                <li>
-                  <NavDropdown title="الخدمات الفرعية" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">
-                      الخدمة الأولى
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">
-                      الخدمة الثانية
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">
-                      خدمة أخرى
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">
-                      رابط منفصل
-                    </NavDropdown.Item>
-                  </NavDropdown>
+                <li className="position-relative sub-menu ">
+                  <span className="dropdown-link">
+                    <FontAwesomeIcon icon={faChevronDown} />
+                    <span>الخدمات الفرعية</span>
+                  </span>
+                  <div className="mega-menu position-absolute">
+                    <Container>
+                      <Row>
+                        <Col md={4}>
+                          <ul className="list-unstyled ">
+                            <li>
+                              <Link href="#action/3.1">
+                                <div className="li-link d-flex justify-content-between align-items-start">
+                                  <div className="link-content">
+                                    <h6>العنوان</h6>
+                                    <p>لوريم ايبسوم دولور سيت</p>
+                                  </div>
+                                  <div className="link-pic">
+                                    <FontAwesomeIcon icon={faWordpress} />
+                                  </div>
+                                </div>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="#action/3.1">
+                                <div className="li-link d-flex justify-content-between align-items-start">
+                                  <div className="link-content">
+                                    <h6>العنوان</h6>
+                                    <p>لوريم ايبسوم دولور سيت</p>
+                                  </div>
+                                  <div className="link-pic">
+                                    <FontAwesomeIcon icon={faWordpress} />
+                                  </div>
+                                </div>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="#action/3.1">
+                                <div className="li-link d-flex justify-content-between align-items-start">
+                                  <div className="link-content">
+                                    <h6>العنوان</h6>
+                                    <p>لوريم ايبسوم دولور سيت</p>
+                                  </div>
+                                  <div className="link-pic">
+                                    <FontAwesomeIcon icon={faWordpress} />
+                                  </div>
+                                </div>
+                              </Link>
+                            </li>
+                          </ul>
+                        </Col>
+                        <Col md={4}>
+                          <ul className="list-unstyled">
+                            <li>
+                              <Link href="#action/3.1">
+                                <div className="li-link d-flex justify-content-between align-items-start">
+                                  <div className="link-content">
+                                    <h6>العنوان</h6>
+                                    <p>لوريم ايبسوم دولور سيت</p>
+                                  </div>
+                                  <div className="link-pic">
+                                    <FontAwesomeIcon icon={faWordpress} />
+                                  </div>
+                                </div>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="#action/3.1">
+                                <div className="li-link d-flex justify-content-between align-items-start">
+                                  <div className="link-content">
+                                    <h6>العنوان</h6>
+                                    <p>لوريم ايبسوم دولور سيت</p>
+                                  </div>
+                                  <div className="link-pic">
+                                    <FontAwesomeIcon icon={faWordpress} />
+                                  </div>
+                                </div>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="#action/3.1">
+                                <div className="li-link d-flex justify-content-between align-items-start">
+                                  <div className="link-content">
+                                    <h6>العنوان</h6>
+                                    <p>لوريم ايبسوم دولور سيت</p>
+                                  </div>
+                                  <div className="link-pic">
+                                    <FontAwesomeIcon icon={faWordpress} />
+                                  </div>
+                                </div>
+                              </Link>
+                            </li>
+                          </ul>
+                        </Col>
+                        <Col md={4}>
+                          <ul className="list-unstyled">
+                            <li>
+                              <Link href="#action/3.1">
+                                <div className="li-link d-flex justify-content-between align-items-start">
+                                  <div className="link-content">
+                                    <h6>العنوان</h6>
+                                    <p>لوريم ايبسوم دولور سيت</p>
+                                  </div>
+                                  <div className="link-pic">
+                                    <FontAwesomeIcon icon={faWordpress} />
+                                  </div>
+                                </div>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="#action/3.1">
+                                <div className="li-link d-flex justify-content-between align-items-start">
+                                  <div className="link-content">
+                                    <h6>العنوان</h6>
+                                    <p>لوريم ايبسوم دولور سيت</p>
+                                  </div>
+                                  <div className="link-pic">
+                                    <FontAwesomeIcon icon={faWordpress} />
+                                  </div>
+                                </div>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="#action/3.1">
+                                <div className="li-link d-flex justify-content-between align-items-start">
+                                  <div className="link-content">
+                                    <h6>العنوان</h6>
+                                    <p>لوريم ايبسوم دولور سيت</p>
+                                  </div>
+                                  <div className="link-pic">
+                                    <FontAwesomeIcon icon={faWordpress} />
+                                  </div>
+                                </div>
+                              </Link>
+                            </li>
+                          </ul>
+                        </Col>
+                      </Row>
+                    </Container>
+                  </div>
                 </li>
               </ul>
             </Nav>
