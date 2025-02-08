@@ -10,9 +10,9 @@ async function getTermsData() {
     const data = await res.json();
 
     return {
-      terms: data.data.description || "",
+      terms: data.data.term.description || "",
       footer: data.data.footer || null,
-      footersquares: data.data.footersquares || [],
+      footersquares: data.data.footerBox || [],
     };
   } catch (error) {
     console.error("Error fetching terms data:", error);
