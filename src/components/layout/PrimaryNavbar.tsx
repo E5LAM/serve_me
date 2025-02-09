@@ -27,7 +27,7 @@ export default function PrimaryNavbar() {
                   <Link href={"/about"}>من نحن</Link>
                 </li>
                 <li>
-                  <Link href={"/MainService"}>الخدمات الرئيسية</Link>
+                  <Link href={"/main-service"}>الخدمات الرئيسية</Link>
                 </li>
                 <li>
                   <Link href={"/contact"}>اتصل بنا</Link>
