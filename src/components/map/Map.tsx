@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
@@ -6,7 +7,7 @@ export default function Map() {
     <section className="map">
       <Container>
         <Row>
-          <Col md={6}>
+          <Col md={7}>
             <div className="map-location">
               <div className="mapouter">
                 <div className="gmap_canvas">
@@ -25,7 +26,7 @@ export default function Map() {
               </div>
             </div>
           </Col>
-          <Col md={6}>
+          <Col md={5}>
             <h2>خدمات (الكلمة الرئيسية) في جميع أنحاء منطقة (الموقع)</h2>
             <p>
               لوريم إيبسوم، دولور سيت أميت كونسكتتور أديبيسيسينغ إيليت. موليتيا،
@@ -34,22 +35,95 @@ export default function Map() {
             </p>
             <Row>
               <Col md={6}>
-                <ul className="list-unstyled text-md-end text-center">
-                  <li>لوريم إيبسوم</li>
-                  <li>لوريم إيبسوم</li>
-                  <li>لوريم إيبسوم</li>
-                  <li>لوريم إيبسوم</li>
-                  <li>لوريم إيبسوم</li>
-                </ul>
+                <div className="country">
+                  <ul className="list-unstyled text-md-end text-center text-dark">
+                    <li>
+                      <Link href="/">
+                        <h4> أكسفورد </h4>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/">
+                        <h4> جيلدفورد </h4>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/">
+                        <h4> جودالمينج </h4>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/">
+                        <h4> لوتون </h4>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/">
+                        <h4> سانت ألبانز </h4>
+                      </Link>
+                    </li>
+                    <li></li>
+                    <li>
+                      <Link href="/">
+                        <h4> ريدينج </h4>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/">
+                        <h4> سلو </h4>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/">
+                        <h4> هيميل هيمبستيد </h4>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </Col>
 
               <Col md={6}>
                 <ul className="list-unstyled text-md-end text-center">
-                  <li>لوريم إيبسوم</li>
-                  <li>لوريم إيبسوم</li>
-                  <li>لوريم إيبسوم</li>
-                  <li>لوريم إيبسوم</li>
-                  <li>لوريم إيبسوم</li>
+                  <li>
+                    <Link href="/">
+                      <h4> غلوستر </h4>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <h4> تشيلمسفورد </h4>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <h4> دارلينجتون </h4>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <h4> دورهام </h4>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <h4> كيدلينجتون </h4>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <h4> أبينجدون </h4>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <h4> ووكينج </h4>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <h4> ألدرشوت </h4>
+                    </Link>
+                  </li>
                 </ul>
               </Col>
             </Row>

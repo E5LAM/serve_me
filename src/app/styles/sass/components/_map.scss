@@ -1,6 +1,15 @@
 .map {
   padding: $big-sections-padding;
   border-bottom: 2px solid $lines-color;
+
+  .country {
+    ul {
+      li {
+        cursor: pointer;
+        color: #337ab7;
+      }
+    }
+  }
 }
 
 .mapouter,

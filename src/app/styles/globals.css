@@ -68,7 +68,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff;
 }
 
 ::-webkit-scrollbar {
@@ -284,6 +283,10 @@ ul {
 .map {
   padding: 50px 0;
   border-bottom: 2px solid rgba(34, 84, 170, 0.5019607843);
+}
+.map .country ul li {
+  cursor: pointer;
+  color: #337ab7;
 }
 
 .mapouter,
