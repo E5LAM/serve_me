@@ -1,6 +1,11 @@
 import Post from "@/components/sub-service/post";
 import Link from "next/link";
-
+interface PostData {
+  id: number;
+  image: string;
+  title: string;
+  description: string;
+}
 export default async function Page({
   params,
 }: {
@@ -23,7 +28,7 @@ export default async function Page({
   return (
     <>
       {serviceData.length > 0 ? (
-        serviceData.map((post: any) => <Post key={post.id} {...post} />)
+        serviceData.map((post: PostData) => <Post key={post.id} {...post} />)
       ) : (
         <div className="text-center py-5">
           <h2>لا يوجد منشورات لهذه الخدمة</h2>
