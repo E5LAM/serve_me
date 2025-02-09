@@ -38,43 +38,43 @@ export default function Map() {
                 <div className="country">
                   <ul className="list-unstyled text-md-end text-center text-dark">
                     <li>
-                      <Link href="/">
+                      <Link href="/service-details">
                         <h4> أكسفورد </h4>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/">
+                      <Link href="/service-details">
                         <h4> جيلدفورد </h4>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/">
+                      <Link href="/service-details">
                         <h4> جودالمينج </h4>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/">
+                      <Link href="/service-details">
                         <h4> لوتون </h4>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/">
+                      <Link href="/service-details">
                         <h4> سانت ألبانز </h4>
                       </Link>
                     </li>
                     <li></li>
                     <li>
-                      <Link href="/">
+                      <Link href="/service-details">
                         <h4> ريدينج </h4>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/">
+                      <Link href="/service-details">
                         <h4> سلو </h4>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/">
+                      <Link href="/service-details">
                         <h4> هيميل هيمبستيد </h4>
                       </Link>
                     </li>
@@ -85,42 +85,42 @@ export default function Map() {
               <Col md={6}>
                 <ul className="list-unstyled text-md-end text-center">
                   <li>
-                    <Link href="/">
+                    <Link href="/service-details">
                       <h4> غلوستر </h4>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/service-details">
                       <h4> تشيلمسفورد </h4>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/service-details">
                       <h4> دارلينجتون </h4>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/service-details">
                       <h4> دورهام </h4>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/service-details">
                       <h4> كيدلينجتون </h4>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/service-details">
                       <h4> أبينجدون </h4>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/service-details">
                       <h4> ووكينج </h4>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/service-details">
                       <h4> ألدرشوت </h4>
                     </Link>
                   </li>

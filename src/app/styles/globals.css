@@ -672,4 +672,23 @@ main.location .hero .hero-info h3 {
 .blog .blog-body .map .gmap_iframe {
   max-width: 90dvw;
   overflow: hidden;
+}
+
+.service-details .we-offered,
+.service-details .our-service {
+  border-bottom: 2px solid rgba(34, 84, 170, 0.5019607843);
+}
+.service-details .sub-serve ul li {
+  background-color: #eaeaea;
+  margin: 20px 0;
+  padding: 13px 0;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.service-details .sub-serve ul a {
+  color: #1e3b55;
 }/*# sourceMappingURL=globals.css.map */
