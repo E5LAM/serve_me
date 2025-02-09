@@ -15,7 +15,6 @@ export default async function Page({
     );
   }
 
-  // جلب البيانات من API
   const res = await fetch(`${baseUrl}/service-posts/${serviceName}`);
   const serviceData = await res.json();
 
