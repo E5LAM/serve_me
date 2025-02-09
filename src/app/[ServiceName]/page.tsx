@@ -1,3 +1,4 @@
+import Post from "@/components/sub-service/post";
 import Link from "next/link";
 
 export default async function Page({
