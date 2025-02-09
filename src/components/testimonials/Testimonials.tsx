@@ -6,12 +6,20 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 
+// تعريف الواجهة للبيانات
+interface Testimonial {
+  name: string;
+  image: string;
+  rating: number;
+  description: string;
+}
+
 export default function Testimonials({
   cols,
   data,
 }: {
   cols?: number;
-  data?: any;
+  data?: Testimonial[];
 }) {
   const settings = {
     dots: false,
@@ -41,9 +49,9 @@ export default function Testimonials({
     <Col md={cols}>
       <div className="testi-slider text-end">
         <h2 className="text-center mb-5 fw-bold">أراء العملاء</h2>
-        {data ? (
+        {data && data.length > 0 ? (
           <Slider {...settings}>
-            {data.map((d: any) => (
+            {data.map((d: Testimonial) => (
               <div key={d.name} className="slider-item">
                 <div className="slider-box-header d-flex justify-content-between align-items-center">
                   <Image width={50} height={50} src={d.image} alt={d.name} />
