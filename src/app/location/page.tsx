@@ -12,7 +12,6 @@ const Testimonials = dynamic(
 );
 import { LocationList } from "./LocationList";
 import Footer from "@/components/layout/Footer";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "أخدمنى | الموقع",
