@@ -12,6 +12,7 @@ const Testimonials = dynamic(
 );
 import { LocationList } from "./LocationList";
 import Footer from "@/components/layout/Footer";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "أخدمنى | الموقع",
@@ -40,9 +41,14 @@ export default async function LocationPage() {
                     <h1>{firstsection.title}</h1>
                     <p>{firstsection.description}</p>
                   </div>
-                  {firstsection.image && (
-                    <img src={firstsection.image} alt="hero image" />
-                  )}
+                  {/* {firstsection.image && (
+                    <Image
+                      width={360}
+                      height={226}
+                      src={firstsection.image}
+                      alt={`${firstsection.title} image`}
+                    />
+                  )} */}
                 </div>
                 {locations ? (
                   <LocationList locations={locations} />
