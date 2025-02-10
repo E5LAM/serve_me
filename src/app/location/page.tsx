@@ -1,4 +1,3 @@
-
 import dynamic from "next/dynamic";
 import { Metadata } from "next";
 

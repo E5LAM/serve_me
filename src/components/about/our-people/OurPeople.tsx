@@ -1,7 +1,27 @@
 import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
 
-export default function OurPeople({ data, members }: any) {
+// تعريف الواجهات (Interfaces) لأنواع البيانات
+interface DataProps {
+  title?: string;
+  description?: string;
+}
+
+interface TeamMember {
+  name: string;
+  image: string;
+}
+
+interface MembersProps {
+  [yearsOfExperience: string]: TeamMember[];
+}
+
+interface OurPeopleProps {
+  data: DataProps;
+  members: MembersProps;
+}
+
+export default function OurPeople({ data, members }: OurPeopleProps) {
   return (
     <div id="our-people" className="pt-4 pt-md-6">
       <Container>
@@ -15,7 +35,7 @@ export default function OurPeople({ data, members }: any) {
           </Col>
         </Row>
         <div className="staffDiv">
-          {Object.keys(members).map((exp: string) => (
+          {Object.keys(members).map((exp) => (
             <Row
               key={exp}
               className="client-area staff-item akinit"
@@ -31,9 +51,9 @@ export default function OurPeople({ data, members }: any) {
               </Col>
               <Col xs={12} sm={9} md={10} className="pb-2 pb-md-3 client-right">
                 <ul className="staffPicsDiv">
-                  {members[exp].map((person: any, index: number) => (
+                  {members[exp].map((person, index) => (
                     <li
-                      key={person.name + index}
+                      key={`${person.name}-${index}`}
                       className="staffPics-item akinit"
                       data-index={index}
                     >
