@@ -1,11 +1,11 @@
 import Post from "@/components/sub-service/post";
 import Link from "next/link";
 
-interface PageProps {
-  params: {
-    serviceName: string;
-  };
-}
+// interface PageProps {
+//   params: {
+//     serviceName: string;
+//   };
+// }
 
 interface PostData {
   id: number;
