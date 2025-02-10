@@ -37,10 +37,13 @@ export default async function Page({
       throw new Error(`Failed to fetch service posts: ${res.statusText}`);
     }
 
-    serviceData = (await res.json()) as PostData[];
-
-    if (!Array.isArray(serviceData)) {
-      throw new Error("Invalid response format: Expected an array");
+    const responseData = await res.json();
+    if (responseData && Array.isArray(responseData.data)) {
+      serviceData = responseData.data as PostData[];
+    } else {
+      throw new Error(
+        "Invalid response format: Expected an array within a 'data' property"
+      );
     }
   } catch (error) {
     console.error("Error fetching service posts:", error);
