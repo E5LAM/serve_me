@@ -2,8 +2,14 @@
 import { Container } from "react-bootstrap";
 import { useState, useEffect } from "react";
 
+interface Term {
+  id: number;
+  updated_at: string;
+  description: string;
+}
+
 export default function Page() {
-  const [terms, setTerms] = useState("");
+  const [terms, setTerms] = useState<{ data: Term[] }>({ data: [] });
 
   useEffect(() => {
     async function fetchTerms() {
